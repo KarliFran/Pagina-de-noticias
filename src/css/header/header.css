@@ -1,0 +1,73 @@
+.bar-header{
+    @apply bg-gray-900 flex items-center flex-wrap justify-around;
+}
+.logo-header{
+    @apply p-4 text-white;
+}
+.nav-item{
+    @apply list-none;
+}
+.menu-nav{
+    @apply block p-2;
+}
+.nav-header{
+    @apply w-full bg-white z-20 h-56;
+}
+.navbar-burger{
+@apply flex items-center px-3 py-2 border rounded text-white border-white;
+}
+.navbar-burger:hover{
+    @apply text-white border-white;
+}
+.bar-burguer{
+    @apply fill-current h-6 w-6 text-gray-700;
+}
+.container-nav{
+    @apply w-full items-center hidden;
+}
+.nav-items{
+    @apply text-sm;
+}
+.menu-item{
+    @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700;
+}
+.menu-item:hover{
+    @apply border-indigo-400 bg-transparent;
+}
+.menu-item:focus{
+    @apply text-blue-500 ;
+}
+.nav-login{
+    @apply px-2 border-l-2 border-r-2 border-gray-500;
+}
+.btn-login{
+    @apply bg-transparent text-white text-base;
+}
+
+.nav-login{
+    @apply hidden;
+}
+
+@media (min-width: 1024px) {
+    .bar-header{
+        @apply flex justify-evenly p-4;
+    }
+    .menu-nav{
+        @apply hidden;
+    }
+    .container-nav{
+        @apply w-auto flex;
+    }
+    .nav-items{
+        @apply flex-grow;
+    }
+    .menu-item{
+        @apply inline-block border-0 text-white;
+    }
+    .nav-header{
+        @apply bg-transparent pt-2;
+    }
+    .nav-login{
+        @apply block;
+    }
+}

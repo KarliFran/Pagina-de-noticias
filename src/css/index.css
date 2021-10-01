@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./header/header.css";
+@import "./reusable/search-bar.css";
+@import "./header/top-news.css";
+@import "./footer/principal.css";
+
+a{
+    @apply no-underline;
+}
+ul{
+    @apply list-none pl-0;
+}
+
+
+
+

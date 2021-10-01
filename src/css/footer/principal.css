@@ -1,0 +1,27 @@
+.footer{
+    @apply bg-black text-white absolute w-full left-0;
+}
+.element-footer{
+    @apply flex items-center flex-col border-b border-gray-400;
+}
+.info-footer{
+    @apply flex justify-center flex-col items-center p-2;
+}
+.social-items{
+    @apply flex justify-center gap-4 p-1;
+}
+.social-item{
+    @apply p-3 flex items-center bg-nk-gray transition duration-500 ease-in-out rounded-sm;
+    &:hover{
+        @apply bg-nk-blue;
+    }
+}
+.title-footer{
+    @apply border-b border-nk-gray p-1 border-t;
+}
+.sections-item{
+    @apply text-xl uppercase tracking-widest text-white;
+}
+.sections-item:hover{
+    @apply border-b w-max border-nk-blue transition duration-700;
+}

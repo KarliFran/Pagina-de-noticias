@@ -1,0 +1,50 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "News page project",
+  "main": "src/js/index.js",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build-prod": "cross-env NODE_ENV=development postcss src/css/index.css -o public/build/index.css",
+    "build": "cross-env NODE_ENV=production postcss src/css/index.css -o public/build/tailwind.css",
+    "js": "webpack --mode=development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^2.2.15",
+    "vue": "^2.6.14",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarliFran/Pagina-de-noticias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarliFran/Pagina-de-noticias/issues"
+  },
+  "homepage": "https://github.com/KarliFran/Pagina-de-noticias#readme"
+}

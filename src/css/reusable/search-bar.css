@@ -1,0 +1,38 @@
+.container-search{
+    @apply absolute flex rounded-2xl p-4 border-b border-nk-gray;
+}
+.bar-search{
+    @apply rounded-2xl p-2 absolute border border-nk-blue w-64 text-gray-900;
+    &:focus{
+        @apply outline-none;
+    }
+}
+.btn-search{
+    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-56 z-10 p-0 top-1;
+}
+.icon-search{
+    @apply w-6;
+}
+@media (min-width: 1024px) {
+    .container-search{
+        @apply flex items-center bg-transparent rounded-full mr-2 static;
+    }
+    .bar-search{
+        @apply text-gray-900 rounded-full w-0 p-0 bg-transparent static;
+        &:focus{
+            @apply outline-none w-40 px-4 py-1 bg-white;
+        }
+    }
+    .btn-search{
+        @apply static;
+    }
+    .container-search:hover{
+        @apply bg-white;
+        .bar-search{
+                @apply px-4 py-1 w-40 bg-white;
+        }
+        .btn-search{
+            @apply text-black bg-white;
+        }
+    }
+}
