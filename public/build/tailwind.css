@@ -771,6 +771,15 @@ Add the correct display in Chrome and Safari.
   }
 }
 
+.featured-picture{
+  height: 100%;
+  width: 100%;
+}
+
+.featured-item{
+  grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+}
+
 .footer{
   position: absolute;
   left: 0px;

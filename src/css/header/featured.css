@@ -1,0 +1,6 @@
+.featured-picture{
+    @apply w-full h-full;
+}
+.featured-item{
+    @apply grid-cols-auto-fill;
+}

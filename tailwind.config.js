@@ -9,6 +9,9 @@ module.exports = {
         'nk-yellow': '#FFB830',
         'nk-beigh':'#FFEDDA',
         'nk-gray':'#404040'
+      },
+      gridTemplateColumns:{
+        'auto-fill': 'repeat(auto-fill, minmax(15rem,1fr))'
       }
     },
   },
