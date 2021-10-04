@@ -13,7 +13,7 @@
     @apply m-0;
 }
 .top-news{
-    @apply flex relative left-40 items-center;
+    @apply flex relative left-40 items-center w-60;
 }
 .letterhead-description{
     @apply flex items-center;
@@ -22,7 +22,7 @@
     @apply flex border-t-2 border-gray-300 justify-center;
 }
 .details-general{
-    @apply w-3/4 flex items-center gap-4 flex-wrap justify-center;
+    @apply flex items-center gap-4 flex-wrap justify-center;
 }
 @media (min-width: 1024px) {
     .container-top{
@@ -32,6 +32,9 @@
         @apply w-9/12;
     }
     .details-general{
-        @apply flex justify-start;
+        @apply flex justify-start w-3/4;
+    }
+    .top-news{
+        @apply w-full;
     }
 }

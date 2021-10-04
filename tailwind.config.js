@@ -11,7 +11,14 @@ module.exports = {
         'nk-gray':'#404040'
       },
       gridTemplateColumns:{
-        'auto-fill': 'repeat(auto-fill, minmax(15rem,1fr))'
+        'auto-fill': 'repeat(auto-fill, minmax(20rem,1fr))'
+      },
+      gridRow:{
+        'row-edit': '1 / span 2',
+        'row-edit-second': 'span 1 / span 2',
+      },
+      gridAutoRows:{
+        'edit': '14rem'
       }
     },
   },

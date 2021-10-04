@@ -513,7 +513,7 @@ Add the correct display in Chrome and Safari.
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding: 1rem;
+    padding: 0px;
   }
 
   .menu-nav{
@@ -541,6 +541,7 @@ Add the correct display in Chrome and Safari.
   }
 
   .nav-header{
+    height: 8rem;
     background-color: transparent;
     padding-top: 0.5rem;
   }
@@ -615,6 +616,7 @@ Add the correct display in Chrome and Safari.
         -ms-flex-align: center;
             align-items: center;
     border-radius: 9999px;
+    border-width: 0px;
     background-color: transparent;
   }
 
@@ -622,6 +624,7 @@ Add the correct display in Chrome and Safari.
     position: static;
     width: 0px;
     border-radius: 9999px;
+    border-width: 0px;
     background-color: transparent;
     padding: 0px;
     --tw-text-opacity: 1;
@@ -629,6 +632,7 @@ Add the correct display in Chrome and Safari.
   }
     .bar-search:focus{
       width: 10rem;
+      border-width: 0px;
       --tw-bg-opacity: 1;
       background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
       padding-left: 1rem;
@@ -641,14 +645,19 @@ Add the correct display in Chrome and Safari.
 
   .btn-search{
     position: static;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
   .container-search:hover{
+    border-width: 0px;
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    padding: 0.25rem;
   }
     .container-search:hover .bar-search{
       width: 10rem;
+      border-width: 0px;
       --tw-bg-opacity: 1;
       background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
       padding-left: 1rem;
@@ -704,6 +713,7 @@ Add the correct display in Chrome and Safari.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 15rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -734,7 +744,6 @@ Add the correct display in Chrome and Safari.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -765,19 +774,121 @@ Add the correct display in Chrome and Safari.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 75%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  .top-news{
+    width: 100%;
+  }
 }
 
-.featured-picture{
-  height: 100%;
+.container-news-featured{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+  gap: 1rem;
+}
+
+.container-picture{
+  margin: 0px;
+  height: 20rem;
   width: 100%;
 }
 
+.featured-picture{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-brightness: brightness(.5);
+}
+
+.featured-categorie{
+  font-weight: 700;
+}
+
 .featured-item{
-  grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.data-post{
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.featured-title{
+  position: absolute;
+  bottom: 1rem;
+  margin: 0px;
+  padding-left: 0.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .featured{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+  }
+
+  .container-news-featured{
+    width: 75%;
+    grid-auto-rows: 14rem;
+  }
+
+  .container-picture{
+    height: 14rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .featured-item:first-child{
+    grid-row: 1 / span 2;
+    height: 100%;
+  }
+    .featured-item:first-child .container-picture{
+      height: 100%;
+    }
+
+  .featured-item:nth-child(2){
+    grid-column: span 2 / span 2;
+  }
+
+  .featured-item{
+    grid-row: span 1 / span 2;
+  }
 }
 
 .footer{

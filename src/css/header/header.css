@@ -50,7 +50,7 @@
 
 @media (min-width: 1024px) {
     .bar-header{
-        @apply flex justify-evenly p-4;
+        @apply flex justify-evenly p-0;
     }
     .menu-nav{
         @apply hidden;
@@ -65,7 +65,7 @@
         @apply inline-block border-0 text-white;
     }
     .nav-header{
-        @apply bg-transparent pt-2;
+        @apply bg-transparent pt-2 h-32;
     }
     .nav-login{
         @apply block;
