@@ -1,18 +1,29 @@
-.container-latam{
-    @apply flex flex-wrap justify-between gap-1;
+.section-latam{
+    @apply p-4;
 }
-.latam-item:first-child {
-    @apply relative flex flex-col w-full;
-        .data-post{
-            @apply absolute bottom-16;
-        }
-        .latam-title{
-            @apply absolute bottom-16;
-        }
+.container-latam{
+    @apply flex overflow-x-scroll overflow-y-hidden gap-1;
 }
 .latam-item{
-    @apply w-2/5;
+    @apply flex flex-col relative min-w-300;
 }
 .latam-title{
     @apply truncate;
+}
+.data-latam{
+    @apply absolute bottom-16 text-white pl-1 font-bold text-xs;
+}
+.latam-title{
+    @apply absolute bottom-0 m-0 text-white pl-1 font-bold;
+}
+@media (min-width: 1024px){
+    .container-latam{
+        @apply grid grid-cols-4 gap-4 w-4/5 p-4 overflow-x-hidden;
+    }
+    .latam-item:first-child{
+        @apply row-row-edit h-full;
+        .container-picture{
+            @apply h-full;
+        }
+    }
 }
