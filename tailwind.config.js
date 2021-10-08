@@ -18,7 +18,10 @@ module.exports = {
         'row-edit-second': 'span 1 / span 2',
       },
       gridAutoRows:{
-        'edit': '14rem'
+        'edit': '14rem',
+      },
+      minWidth:{
+        '300': '300px',
       }
     },
   },

@@ -26,7 +26,17 @@ eval("\n    // Navbar Toggle\n    document.addEventListener('DOMContentLoaded', 
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nav_bar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav-bar */ \"./src/js/nav-bar.js\");\n/* harmony import */ var _nav_bar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_nav_bar__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/nav-bar.js":
+/*!***************************!*\
+  !*** ./src/js/nav-bar.js ***!
+  \***************************/
+/***/ (function() {
+
+eval("\n$('.sub-menu ul').hide();\n$(\".sub-menu a\").click(function () {\n    $(this).parent(\".sub-menu\").children(\"ul\").slideToggle(\"200\");\n    $(this).find(\"i.fa\").toggleClass(\"fa-angle-up fa-angle-down\");\n});\n\n//# sourceURL=webpack://test-project/./src/js/nav-bar.js?");
 
 /***/ })
 

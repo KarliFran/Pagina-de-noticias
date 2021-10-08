@@ -26,7 +26,7 @@
     @apply w-full items-center hidden;
 }
 .nav-items{
-    @apply text-sm;
+    @apply text-sm flex;
 }
 .menu-item{
     @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700;

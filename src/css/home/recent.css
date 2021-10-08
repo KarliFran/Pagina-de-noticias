@@ -1,0 +1,37 @@
+.recent-news{
+    @apply bg-gray-100 p-1;
+}
+.container-title{
+    @apply w-4/5 border-b-2 border-nk-blue;
+}
+.title-section{
+    @apply w-max text-white bg-nk-blue relative p-2 m-0;
+}
+.title-section::before{
+    @apply z-10 absolute w-0 h-0 border-t-8 border-nk-blue top-0 -right-2;
+    content: "";
+    border-right: 8px solid transparent;
+}
+.container-recent-items{
+    @apply flex flex-col shadow-2xl;
+}
+.recent-post{
+    @apply relative flex flex-col p-4;
+}
+.recent-img{
+    @apply h-56 mx-0 my-0;
+}
+.data-recent{
+    @apply absolute bottom-16;
+}
+.recent-title{
+    @apply absolute bottom-4;
+}
+@media (min-width: 1024px){
+    .recent-news{
+        @apply flex flex-col p-4;
+    }
+    .container-recent-items{
+        @apply flex flex-row flex-wrap justify-center w-10/12 shadow-none;
+    }
+}

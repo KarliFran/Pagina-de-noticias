@@ -1,0 +1,18 @@
+.container-latam{
+    @apply flex flex-wrap justify-between gap-1;
+}
+.latam-item:first-child {
+    @apply relative flex flex-col w-full;
+        .data-post{
+            @apply absolute bottom-16;
+        }
+        .latam-title{
+            @apply absolute bottom-16;
+        }
+}
+.latam-item{
+    @apply w-2/5;
+}
+.latam-title{
+    @apply truncate;
+}
