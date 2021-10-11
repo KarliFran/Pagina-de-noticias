@@ -8,6 +8,7 @@
 @import "./home/featured.css";
 @import "./home/recent.css";
 @import "./home/latam.css";
+@import "./home/home-sections.css";
 @import "./footer/principal.css";
 
 a{

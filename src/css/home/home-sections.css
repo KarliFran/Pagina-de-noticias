@@ -1,0 +1,28 @@
+
+.featured-item:first-child{
+@apply block relative;
+.more-picture{
+    @apply absolute;
+}
+.more-data{
+    @apply relative bottom-4 text-white text-base;
+}
+.more-title{
+    @apply m-0 relative pl-2 bottom-2 text-white;
+}
+.more-img{
+    @apply w-full h-full;
+}
+}
+.more-news-item{
+    @apply flex gap-2;
+}
+.more-img{
+    @apply m-0 h-12 w-96;
+}
+.more-picture{
+    @apply w-full h-full;
+}
+.more-news-item{
+    @apply flex;
+}
