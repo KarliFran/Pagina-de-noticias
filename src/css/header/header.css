@@ -26,7 +26,7 @@
     @apply w-full items-center hidden;
 }
 .nav-items{
-    @apply text-sm flex;
+    @apply text-sm flex flex-col;
 }
 .menu-item{
     @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700;
@@ -59,7 +59,7 @@
         @apply w-auto flex;
     }
     .nav-items{
-        @apply flex-grow;
+        @apply flex-grow flex-row;
     }
     .menu-item{
         @apply inline-block border-0 text-white;

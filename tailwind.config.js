@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       colors:{
         'nk-blue': '#3DB2FF',
-        'nk-red': '#FF2442',
-        'nk-yellow': '#FFB830',
+        'nk-red': '#CD113B',
+        'nk-yellow': '#F0A500',
         'nk-beigh':'#FFEDDA',
-        'nk-gray':'#404040'
+        'nk-gray':'#404040',
+        'nk-aqua': '#316B83',
+        'nk-green': '#71EFA3',
       },
       gridTemplateColumns:{
         'auto-fill': 'repeat(auto-fill, minmax(20rem,1fr))'
@@ -22,6 +24,9 @@ module.exports = {
       },
       minWidth:{
         '300': '300px',
+      },
+      width:{
+        '29': '29rem',
       }
     },
   },
