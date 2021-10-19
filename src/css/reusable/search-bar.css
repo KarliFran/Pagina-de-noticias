@@ -8,7 +8,7 @@
     }
 }
 .btn-search{
-    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-56 z-10 p-0 top-1;
+    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-56 z-10 p-0 top-1 cursor-pointer;
 }
 .icon-search{
     @apply w-6;

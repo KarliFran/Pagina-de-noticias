@@ -596,6 +596,7 @@ Add the correct display in Chrome and Safari.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1383,6 +1384,77 @@ Add the correct display in Chrome and Safari.
           transition-duration: 150ms;
   -webkit-transition-duration: 700ms;
           transition-duration: 700ms;
+}
+
+.container-videos{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  padding: 2rem;
+}
+
+.title-section{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-api{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+}
+
+iframe{
+  position: relative;
+}
+
+.videos-destacado > p{
+  position: relative;
+  bottom: 6rem;
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.p > a{
+  position: absolute;
+  top: 2rem;
+  bottom: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.playlist-title{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.wrapper-video{
+  height: 16rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 a{

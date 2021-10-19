@@ -1,0 +1,25 @@
+.container-videos{
+    @apply flex flex-col items-center gap-4 p-8 bg-gray-900 ;
+}
+.title-section{
+    @apply flex;
+}
+.container-api{
+    @apply flex justify-around gap-8 w-9/12;
+}
+iframe{
+    @apply relative;
+}
+.videos-destacado > p{
+    @apply relative bottom-24 text-white text-base hidden;
+}
+
+.p > a{
+    @apply absolute bottom-0 top-8 text-white text-base;
+}
+.playlist-title{
+    @apply flex text-white;
+}
+.wrapper-video{
+    @apply h-64 overflow-y-scroll overflow-x-hidden;
+}

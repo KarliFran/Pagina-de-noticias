@@ -10,6 +10,7 @@
 @import "./home/latam.css";
 @import "./home/home-sections.css";
 @import "./footer/principal.css";
+@import "./home/api.css";
 
 a{
     @apply no-underline;
