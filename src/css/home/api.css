@@ -1,14 +1,20 @@
 .container-videos{
-    @apply flex flex-col items-center gap-4 p-8 bg-gray-900 ;
+    @apply flex flex-col justify-center gap-4 p-4 bg-gray-900 ;
 }
 .title-section{
     @apply flex;
 }
 .container-api{
-    @apply flex justify-around gap-8 w-9/12;
+    @apply flex flex-col justify-around gap-8 w-96;
+}
+.videos-destacado{
+    @apply w-full h-64;
+}
+.videos-destacado{
+    @apply w-full h-64;
 }
 iframe{
-    @apply relative;
+    @apply relative w-full h-full;
 }
 .videos-destacado > p{
     @apply relative bottom-24 text-white text-base hidden;
@@ -21,5 +27,13 @@ iframe{
     @apply flex text-white;
 }
 .wrapper-video{
-    @apply h-64 overflow-y-scroll overflow-x-hidden;
+    @apply h-44 overflow-y-scroll overflow-x-hidden;
+}
+@media (min-width: 1024px){
+.container-videos{
+    @apply flex items-center;
+}
+.container-api{
+    @apply flex flex-row w-9/12;
+}
 }

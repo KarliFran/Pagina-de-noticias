@@ -1,9 +1,12 @@
+.featured{
+    @apply p-1;
+}
 .container-news-featured{
     @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4;
 }
 
 .container-picture{
-    @apply w-full h-80 m-0;
+    @apply w-full h-56 m-0;
 }
 .featured-picture{
     @apply w-full h-full relative filter brightness-50 object-cover;

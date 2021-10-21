@@ -794,6 +794,10 @@ Add the correct display in Chrome and Safari.
   }
 }
 
+.featured{
+  padding: 0.25rem;
+}
+
 .container-news-featured{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,7 +810,7 @@ Add the correct display in Chrome and Safari.
 
 .container-picture{
   margin: 0px;
-  height: 20rem;
+  height: 14rem;
   width: 100%;
 }
 
@@ -1055,6 +1059,14 @@ Add the correct display in Chrome and Safari.
 }
 
 .section-latam{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
   padding: 1rem;
 }
 
@@ -1123,6 +1135,10 @@ Add the correct display in Chrome and Safari.
     .latam-item:first-child .container-picture{
       height: 100%;
     }
+}
+
+.container-more-news{
+  padding: 1rem;
 }
 
 .more-news{
@@ -1204,7 +1220,7 @@ Add the correct display in Chrome and Safari.
 
 .more-img{
   margin: 0px;
-  height: 6rem;
+  height: 4rem;
   width: 24rem;
 }
 
@@ -1224,11 +1240,12 @@ Add the correct display in Chrome and Safari.
 }
 
 .title-more-news{
-  width: 29rem;
+  width: 24rem;
   border-bottom-width: 1px;
 }
 
 .more-title{
+  margin: 0px;
   width: 18rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1251,6 +1268,14 @@ Add the correct display in Chrome and Safari.
 }
 
 .container-data{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
@@ -1264,6 +1289,14 @@ Add the correct display in Chrome and Safari.
 
   .section-tech{
     width: 91.666667%;
+  }
+
+  .title-more-news{
+    width: 29rem;
+  }
+
+  .more-img{
+    height: 6rem;
   }
 }
 
@@ -1394,13 +1427,13 @@ Add the correct display in Chrome and Safari.
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .title-section{
@@ -1413,14 +1446,30 @@ Add the correct display in Chrome and Safari.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
+  width: 24rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 2rem;
 }
 
+.videos-destacado{
+  height: 16rem;
+  width: 100%;
+}
+
+.videos-destacado{
+  height: 16rem;
+  width: 100%;
+}
+
 iframe{
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .videos-destacado > p{
@@ -1452,9 +1501,31 @@ iframe{
 }
 
 .wrapper-video{
-  height: 16rem;
+  height: 11rem;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+@media (min-width: 1024px){
+  .container-videos{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .container-api{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 a{
@@ -1464,6 +1535,10 @@ a{
 ul{
   list-style-type: none;
   padding-left: 0px;
+}
+
+body{
+  margin: 0px;
 }
 
 @media (min-width: 640px) {

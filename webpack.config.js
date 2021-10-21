@@ -11,11 +11,6 @@ const webpack = require('webpack');module.exports = {
  module: {
  rules: []
  },
- plugins: [
-    new webpack.ProvidePlugin({
-        process: 'process/browser',
-    }),
-],
 }
 
 
