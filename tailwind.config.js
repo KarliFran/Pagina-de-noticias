@@ -27,6 +27,10 @@ module.exports = {
       },
       width:{
         '29': '29rem',
+        '24': '24rem',
+      },
+      inset:{
+        '22': '22rem'
       }
     },
   },

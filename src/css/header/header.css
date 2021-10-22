@@ -11,7 +11,7 @@
     @apply block p-2;
 }
 .nav-header{
-    @apply w-full bg-white z-20 h-56;
+    @apply w-full bg-white z-20 h-72;
 }
 .navbar-burger{
 @apply flex items-center px-3 py-2 border rounded text-white border-white;
@@ -46,6 +46,9 @@
 
 .nav-login{
     @apply hidden;
+}
+.social-item-header{
+    @apply flex items-center rounded-sm p-2 bg-nk-blue;
 }
 
 @media (min-width: 1024px) {

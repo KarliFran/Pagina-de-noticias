@@ -1,5 +1,5 @@
 .section-latam{
-    @apply flex flex-col p-4 gap-1;
+    @apply flex flex-col p-4 gap-2;
 }
 .container-latam{
     @apply flex overflow-x-scroll overflow-y-hidden gap-1;

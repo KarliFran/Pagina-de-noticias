@@ -16,13 +16,16 @@
     @apply flex relative left-40 items-center w-60;
 }
 .letterhead-description{
-    @apply flex items-center;
+    @apply flex items-center pl-2;
 }
 .date-details{
     @apply flex border-t-2 border-gray-300 justify-center;
 }
 .details-general{
-    @apply flex items-center gap-4 flex-wrap justify-center;
+    @apply flex items-center flex-wrap justify-around gap-1 w-full;
+}
+.item-details{
+    @apply flex items-center gap-1 text-xs;
 }
 @media (min-width: 1024px) {
     .container-top{
