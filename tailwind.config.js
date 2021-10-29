@@ -2,6 +2,9 @@ module.exports = {
   purge: [false],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily:{
+      'serif':['Times New Roman']
+    },
     extend: {
       colors:{
         'nk-blue': '#3DB2FF',
@@ -11,6 +14,7 @@ module.exports = {
         'nk-gray':'#404040',
         'nk-aqua': '#316B83',
         'nk-green': '#71EFA3',
+        'nk-cintillo': 'rgba(0,0,0,0.6)',
       },
       gridTemplateColumns:{
         'auto-fill': 'repeat(auto-fill, minmax(20rem,1fr))'
@@ -29,8 +33,13 @@ module.exports = {
         '29': '29rem',
         '24': '24rem',
       },
+      height:{
+        '98':'26rem',
+      },
       inset:{
-        '22': '22rem'
+        '22': '22rem',
+        '1/4': '40%',
+        '98': '28rem',
       }
     },
   },

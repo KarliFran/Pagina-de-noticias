@@ -530,9 +530,9 @@ Add the correct display in Chrome and Safari.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 1rem;
     padding: 0px;
   }
 
@@ -573,6 +573,11 @@ Add the correct display in Chrome and Safari.
   .nav-login{
     display: block;
   }
+
+  .social-item-header{
+    background-color: transparent;
+    padding: 0px;
+  }
 }
 
 .header-search{
@@ -610,6 +615,10 @@ Add the correct display in Chrome and Safari.
     outline: 2px solid transparent;
     outline-offset: 2px;
   }
+
+h1{
+  font-family: Times New Roman;
+}
 
 .btn-search{
   position: relative;
@@ -1455,6 +1464,107 @@ Add the correct display in Chrome and Safari.
           transition-duration: 700ms;
 }
 
+.title-suscribe{
+  margin: 0px;
+  text-align: center;
+}
+
+.suscribe{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.input-susbcribe{
+  width: 50%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  padding: 0.5rem;
+}
+
+.mail-img{
+  position: absolute;
+  right: 33.333333%;
+}
+
+.btn-subscribe{
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  -webkit-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  background-color: transparent;
+  padding: 0.25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(61, 178, 255, var(--tw-text-opacity));
+  -webkit-transition-property: background-color, border-color, color, fill, stroke;
+  transition-property: background-color, border-color, color, fill, stroke;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
+}
+
+.btn-subscribe:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-subscribe:focus{
+  border-width: 2px;
+}
+
+@media (min-width: 1024px){
+  .info-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .suscribe-general{
+    position: relative;
+    width: 100%;
+  }
+
+  .input-susbcribe{
+    width: 50%;
+  }
+}
+
 .container-videos{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,7 +1599,6 @@ Add the correct display in Chrome and Safari.
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 2rem;
 }
 
 .videos-destacado{
@@ -1537,9 +1646,63 @@ iframe{
 }
 
 .wrapper-video{
-  height: 11rem;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 16rem;
+  gap: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.videos-number {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.videos-number > a{
+  position: relative;
+}
+
+.video-img{
+  position: relative;
+  height: 12rem;
+  width: 18rem;
+}
+
+.img-video{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-info{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0.25rem;
+  padding-left: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.play-icon{
+  position: relative;
+  bottom: 7rem;
+  left: 40%;
+}
+
+#info{
+  margin: 0px;
+}
+
+h2{
+  margin: 0px;
 }
 
 @media (min-width: 1024px){
@@ -1561,6 +1724,52 @@ iframe{
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px){
+  .container-videos{
+    padding: 2rem;
+  }
+
+  .container-api{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .wrapper-video{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 24rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .videos-destacado{
+    height: 24rem;
+  }
+
+  .videos-number{
+    height: 12rem;
+  }
+
+  .video-img{
+    height: 11rem;
+    width: 24rem;
+  }
+
+  .videos-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

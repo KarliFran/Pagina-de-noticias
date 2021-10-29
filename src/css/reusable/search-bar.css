@@ -10,6 +10,9 @@
         @apply outline-none;
     }
 }
+h1{
+    @apply font-serif;
+}
 .btn-search{
     @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-22 z-10 p-0 top-1 cursor-pointer;
 }

@@ -5,6 +5,8 @@ const query = 'news';
 
 let list = document.querySelector('.wrapper-video');
 
+let item;
+
 if(list){
     item = list.querySelector('.videos-number');
     list.innerHTML = '';

@@ -1809,6 +1809,11 @@
       "integrity": "sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=",
       "dev": true
     },
+    "process": {
+      "version": "0.11.10",
+      "resolved": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+      "integrity": "sha1-czIwDoQBYb2j5podHZGn1LwW8YI="
+    },
     "punycode": {
       "version": "2.1.1",
       "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz",
