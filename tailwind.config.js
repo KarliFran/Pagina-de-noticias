@@ -13,7 +13,7 @@ module.exports = {
         'nk-beigh':'#FFEDDA',
         'nk-gray':'#404040',
         'nk-aqua': '#316B83',
-        'nk-green': '#71EFA3',
+        'nk-green': '#61B15A',
         'nk-cintillo': 'rgba(0,0,0,0.6)',
       },
       gridTemplateColumns:{
@@ -31,15 +31,17 @@ module.exports = {
       },
       width:{
         '29': '29rem',
-        '24': '24rem',
+        '95': '23rem',
       },
       height:{
         '98':'26rem',
+        'h-max': 'max-content',
       },
       inset:{
         '22': '22rem',
         '1/4': '40%',
         '98': '28rem',
+        '1/6': '31%',
       }
     },
   },

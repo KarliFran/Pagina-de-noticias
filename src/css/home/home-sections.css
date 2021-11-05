@@ -10,7 +10,7 @@
     @apply absolute brightness-50 object-cover;
 }
 .more-data{
-    @apply relative bottom-4 text-white text-base;
+    @apply relative text-white text-base;
 }
 .more-title{
     @apply m-0 relative pl-2 bottom-2 text-white overflow-ellipsis overflow-hidden w-full;

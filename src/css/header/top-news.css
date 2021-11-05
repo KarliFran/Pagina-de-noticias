@@ -25,7 +25,7 @@
     @apply flex items-center flex-wrap justify-around gap-1 w-full;
 }
 .item-details{
-    @apply flex items-center gap-1 text-xs;
+    @apply flex items-center gap-1 text-base;
 }
 @media (min-width: 1024px) {
     .container-top{
@@ -35,9 +35,12 @@
         @apply w-9/12;
     }
     .details-general{
-        @apply flex justify-start w-3/4;
+        @apply flex gap-4 justify-start w-3/4;
     }
     .top-news{
         @apply w-full;
+    }
+    .item-details{
+        @apply text-xl;
     }
 }

@@ -2,7 +2,7 @@
     @apply flex flex-col p-4 gap-2;
 }
 .container-latam{
-    @apply flex overflow-x-scroll overflow-y-hidden gap-1;
+    @apply flex overflow-x-scroll overflow-y-hidden gap-1 pb-4;
 }
 .latam-item{
     @apply flex flex-col relative min-w-300 ;
@@ -11,10 +11,16 @@
     @apply truncate;
 }
 .data-latam{
-    @apply absolute bottom-16 text-white pl-1 font-bold text-xs;
+    @apply text-white pl-1 font-bold text-xs;
 }
 .latam-title{
-    @apply absolute bottom-0 m-0 text-white pl-1 font-bold;
+    @apply m-0 text-white pl-1 font-bold;
+}
+.section-poster{
+    @apply flex justify-center;
+}
+.second-info{
+    @apply block;
 }
 @media (min-width: 1024px){
     .container-latam{
@@ -25,5 +31,8 @@
         .container-picture{
             @apply h-full;
         }
+    }
+    .second-info{
+        @apply flex;
     }
 }

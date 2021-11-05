@@ -11,6 +11,7 @@
 @import "./home/home-sections.css";
 @import "./footer/principal.css";
 @import "./home/api.css";
+@import "./reusable/boletin.css";
 
 a{
     @apply no-underline;
@@ -21,7 +22,9 @@ ul{
 body{
     @apply m-0;
 }
-
+h1, h2, h3, p, a{
+    @apply font-serif;
+}
 
 
 

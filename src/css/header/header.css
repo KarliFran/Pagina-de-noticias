@@ -29,7 +29,7 @@
     @apply text-sm flex flex-col;
 }
 .menu-item{
-    @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700;
+    @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700 uppercase;
 }
 .menu-item:hover{
     @apply border-indigo-400 bg-transparent;
@@ -65,7 +65,7 @@
         @apply flex-grow flex-row;
     }
     .menu-item{
-        @apply inline-block border-0 text-white;
+        @apply inline-block border-0 text-white text-xl;
     }
     .nav-header{
         @apply bg-transparent pt-2 h-32;

@@ -1,0 +1,14 @@
+.container-boletin{
+    @apply flex flex-col items-center w-95 border border-nk-blue rounded-md;
+}
+.subscribe-enter{
+    @apply text-center;
+}
+.mail-img-form{
+    @apply absolute;
+}
+@media (min-width: 1024px){
+.section-boletin{
+    @apply sticky h-h-max top-0;
+}
+}
