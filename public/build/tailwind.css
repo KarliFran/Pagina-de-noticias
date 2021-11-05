@@ -567,6 +567,17 @@ Add the correct display in Chrome and Safari.
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+  .items-sub-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .nav-header{
     height: 8rem;
     background-color: transparent;
@@ -580,6 +591,67 @@ Add the correct display in Chrome and Safari.
   .social-item-header{
     background-color: transparent;
     padding: 0px;
+  }
+
+  .sub-menu{
+    position: relative;
+  }
+    .sub-menu:hover .menu-item-sub-menu{
+      display: block;
+    }
+
+  .menu-item-sub-menu{
+    position: absolute;
+    display: none;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .items-sub-menu{
+    width: 14rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+    opacity: 0;
+    -webkit-animation: menu-noticia 0.5s forwards 1;
+            animation: menu-noticia 0.5s forwards 1;
+    -webkit-animation-delay: 0.4;
+            animation-delay: 0.4;
+  }
+
+  .item-sub-menu{
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+}
+
+@-webkit-keyframes menu-noticia{
+  0%{
+    -webkit-transform: translate3d(0, 22px, 0);
+            transform: translate3d(0, 22px, 0);
+    opacity: 0;
+  }
+
+  100%{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-noticia{
+  0%{
+    -webkit-transform: translate3d(0, 22px, 0);
+            transform: translate3d(0, 22px, 0);
+    opacity: 0;
+  }
+
+  100%{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

@@ -31,6 +31,7 @@
 .menu-item{
     @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700 uppercase;
 }
+
 .menu-item:hover{
     @apply border-indigo-400 bg-transparent;
 }
@@ -67,6 +68,9 @@
     .menu-item{
         @apply inline-block border-0 text-white text-xl;
     }
+    .items-sub-menu{
+        @apply flex flex-col gap-2;
+    }
     .nav-header{
         @apply bg-transparent pt-2 h-32;
     }
@@ -75,5 +79,35 @@
     }
     .social-item-header{
         @apply p-0 bg-transparent;
+    }
+    .sub-menu{
+        @apply relative;
+    }
+    .sub-menu:hover{
+        .menu-item-sub-menu{
+            @apply block;
+        }
+    }
+    .menu-item-sub-menu{
+        @apply hidden absolute  text-white;
+    }
+    .items-sub-menu{
+        @apply opacity-0 w-56 bg-nk-blue;
+        animation: menu-noticia 0.5s forwards 1;
+        animation-delay: 0.4;
+    }
+    .item-sub-menu{
+        @apply p-2 text-lg text-white;
+    }
+}
+
+@keyframes menu-noticia{
+    0%{
+        transform: translate3d(0, 22px, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
 }
