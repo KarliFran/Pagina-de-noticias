@@ -12,6 +12,7 @@
 @import "./footer/principal.css";
 @import "./home/api.css";
 @import "./reusable/boletin.css";
+@import "./News-section/page-news.css";
 
 a{
     @apply no-underline;

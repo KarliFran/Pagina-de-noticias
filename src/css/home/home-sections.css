@@ -41,7 +41,7 @@
     @apply absolute;
 }
 .title-more-news{
-    @apply border-b w-96;
+    @apply border-b-2 w-96;
 }
 .more-title{
     @apply truncate w-72 m-0;
