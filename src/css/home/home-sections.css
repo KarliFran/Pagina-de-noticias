@@ -4,10 +4,13 @@
 .more-news{
     @apply flex flex-col gap-4;
 }
+.more-news-item:hover{
+    @apply filter brightness-125;
+}
 .more-news-item:first-child{
 @apply flex flex-col relative;
 .more-picture{
-    @apply absolute brightness-50 object-cover;
+    @apply absolute object-cover;
 }
 .more-data{
     @apply relative text-white text-base;

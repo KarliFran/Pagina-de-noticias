@@ -4,3 +4,35 @@
 .sections-news:nth-child(2n+1){
     @apply bg-gray-200;
 }
+.section-more{
+    @apply flex items-center justify-center border-4 border-dashed ml-4 cursor-pointer border-gray-400 transition-all duration-300 min-w-200;
+}
+.btn-more-news{
+    @apply p-3 text-gray-800 text-3xl animate-pulse;
+}
+
+
+.latam:hover{
+@apply bg-nk-blue border-nk-blue;
+.btn-more-news{
+@apply text-white;
+}
+}
+.tech-more:hover{
+@apply bg-nk-aqua border-nk-aqua;
+.btn-more-news{
+    @apply text-white;
+    }
+}
+.sports-more:hover{
+    @apply bg-nk-green border-nk-green;
+    .btn-more-news{
+        @apply text-white;
+        }
+}
+.culture-more:hover{
+    @apply bg-nk-yellow border-nk-yellow;
+    .btn-more-news{
+        @apply text-white;
+        }
+}

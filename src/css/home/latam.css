@@ -2,10 +2,13 @@
     @apply flex flex-col p-4 gap-2;
 }
 .container-latam{
-    @apply flex overflow-x-scroll overflow-y-hidden gap-1 pb-4;
+    @apply flex overflow-x-scroll overflow-y-hidden gap-1 py-4;
 }
 .latam-item{
     @apply flex flex-col relative min-w-300 ;
+}
+.latam-item:hover{
+    @apply filter brightness-110;
 }
 .latam-title{
     @apply truncate;

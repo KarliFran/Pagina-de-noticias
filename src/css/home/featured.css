@@ -2,7 +2,7 @@
     @apply p-1;
 }
 .container-news-featured{
-    @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4;
+    @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4 p-4;
 }
 
 .container-picture{
@@ -15,7 +15,10 @@
     @apply font-bold;
 }
 .featured-item{
-    @apply flex flex-col relative min-w-300;
+    @apply flex flex-col relative min-w-300 transition-all duration-500;
+}
+.featured-item:hover{
+    @apply transform scale-105;
 }
 .data-post{
     @apply text-white pl-1 font-bold text-xs;

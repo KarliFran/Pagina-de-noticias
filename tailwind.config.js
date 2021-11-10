@@ -28,6 +28,7 @@ module.exports = {
       },
       minWidth:{
         '300': '300px',
+        '200': '200px',
       },
       width:{
         '29': '29rem',

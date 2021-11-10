@@ -24,6 +24,9 @@
 .container-post-info{
     @apply flex flex-col items-center gap-4 p-2;
 }
+.recent-post:hover{
+    @apply filter brightness-125;
+}
 
 @media (min-width: 1024px){
     .recent-news{
