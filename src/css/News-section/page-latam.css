@@ -1,0 +1,24 @@
+.container-title-categorie{
+   @apply bg-banner-latam bg-center bg-cover bg-opacity-25 p-4;
+}
+.container-info-posts{
+    @apply flex flex-col gap-2 p-2;
+}
+.categorie-title{
+    @apply text-white;
+}
+.title-post-categorie{
+    @apply m-0;
+}
+.description-posts{
+    @apply m-0;
+}
+.item-categorie{
+    @apply flex flex-col gap-2 mt-4;
+}
+.categorie-more{
+    @apply p-3 w-40 bg-nk-blue rounded-sm text-white text-base cursor-pointer;
+}
+.categorie-more:hover{
+    @apply bg-blue-500;
+}

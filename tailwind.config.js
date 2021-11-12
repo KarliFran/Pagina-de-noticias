@@ -6,6 +6,9 @@ module.exports = {
       'serif':['Times New Roman']
     },
     extend: {
+      backgroundImage: {
+        'banner-latam': "url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg')",
+      },
       colors:{
         'nk-blue': '#3DB2FF',
         'nk-red': '#CD113B',

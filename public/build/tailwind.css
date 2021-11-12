@@ -2187,6 +2187,69 @@ h2{
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+.container-title-categorie{
+  --tw-bg-opacity: 0.25;
+  background-image: url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.container-info-posts{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.categorie-title{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.title-post-categorie{
+  margin: 0px;
+}
+
+.description-posts{
+  margin: 0px;
+}
+
+.item-categorie{
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categorie-more{
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.categorie-more:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
 a{
   text-decoration: none;
 }

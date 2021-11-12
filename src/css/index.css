@@ -13,6 +13,7 @@
 @import "./home/api.css";
 @import "./reusable/boletin.css";
 @import "./News-section/page-news.css";
+@import "./News-section/page-latam.css";
 
 a{
     @apply no-underline;
