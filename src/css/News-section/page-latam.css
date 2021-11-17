@@ -1,24 +1,76 @@
+.categorie-posts{
+@apply flex flex-col p-0;
+}
 .container-title-categorie{
-   @apply bg-banner-latam bg-center bg-cover bg-opacity-25 p-4;
+    @apply bg-banner-latam bg-center bg-cover bg-opacity-25 p-4;
 }
-.container-info-posts{
-    @apply flex flex-col gap-2 p-2;
-}
+
 .categorie-title{
     @apply text-white;
 }
-.title-post-categorie{
-    @apply m-0;
+.container-info-posts{
+    @apply flex flex-col gap-2;
 }
+.item-categorie:hover{ 
+    @apply filter brightness-105;
+.title-post-categorie{
+    @apply text-nk-blue;
+}
+}
+.title-post-categorie{
+    @apply m-0 text-xl text-gray-900 font-bold transition-all duration-300;
+}
+
 .description-posts{
-    @apply m-0;
+    @apply m-0 text-xl text-justify;
 }
 .item-categorie{
-    @apply flex flex-col gap-2 mt-4;
+    @apply flex flex-col gap-2 mt-4 p-4;
 }
 .categorie-more{
     @apply p-3 w-40 bg-nk-blue rounded-sm text-white text-base cursor-pointer;
 }
 .categorie-more:hover{
     @apply bg-blue-500;
+}
+.categorie-image{
+    @apply m-0;
+}
+.container-categorie-posts{
+    @apply w-full;
+}
+.section-boletin{
+@apply flex flex-col items-center gap-4 p-2;
+}
+.nav-pagination{
+    @apply flex justify-center p-4;
+}
+.pagination{
+    @apply flex justify-center items-center m-0 gap-4;
+}
+.page-link{
+    @apply flex items-center justify-center w-8 h-8 text-xl text-nk-blue rounded border border-nk-blue transition duration-700 ease-in-out ;
+}
+.page-link:hover{
+    @apply  bg-nk-blue text-white;
+}
+@media (min-width: 1024px){
+.categorie-posts{
+    @apply flex flex-row gap-3 justify-evenly;
+}
+    .container-title-categorie{
+        @apply bg-fixed p-6;
+    }
+    .categorie-posts{
+        @apply flex justify-center p-4;
+    }
+    .categorie-image{
+        @apply h-80;
+    }
+    .container-categorie-posts{
+        @apply w-2/5;
+    }
+    .section-boletin{
+        @apply flex flex-col gap-4;
+    }
 }
