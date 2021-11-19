@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'banner-latam': "url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg')",
+        'banner-tech': "url('https://i.postimg.cc/BnxqQ1tJ/PQS-tecnologia-post-coronavirus.jpg')",
+        'banner-culture': "url('https://i.postimg.cc/JhhHDWg6/Comunicacio-n-cultural.jpg')",
       },
       colors:{
         'nk-blue': '#3DB2FF',

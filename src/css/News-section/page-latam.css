@@ -2,7 +2,13 @@
 @apply flex flex-col p-0;
 }
 .container-title-categorie{
-    @apply bg-banner-latam bg-center bg-cover bg-opacity-25 p-4;
+    @apply bg-center bg-cover bg-opacity-25 p-4;
+}
+.news-latam{
+    @apply bg-banner-latam;
+}
+.news-tech{
+    @apply bg-banner-tech;
 }
 
 .categorie-title{
@@ -13,8 +19,11 @@
 }
 .item-categorie:hover{ 
     @apply filter brightness-105;
-.title-post-categorie{
+.text-latam{
     @apply text-nk-blue;
+}
+.text-tech{
+    @apply text-nk-aqua;
 }
 }
 .title-post-categorie{
@@ -28,10 +37,19 @@
     @apply flex flex-col gap-2 mt-4 p-4;
 }
 .categorie-more{
-    @apply p-3 w-40 bg-nk-blue rounded-sm text-white text-base cursor-pointer;
+    @apply p-3 w-40 rounded-sm text-white text-base cursor-pointer;
 }
-.categorie-more:hover{
+.btn-latam{
+    @apply bg-nk-blue;
+}
+.btn-latam:hover{
     @apply bg-blue-500;
+}
+.btn-tech{
+    @apply bg-nk-aqua;
+}
+.btn-tech:hover{
+    @apply bg-blue-700;
 }
 .categorie-image{
     @apply m-0;

@@ -2200,10 +2200,17 @@ h2{
 
 .container-title-categorie{
   --tw-bg-opacity: 0.25;
-  background-image: url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg');
   background-size: cover;
   background-position: center;
   padding: 1rem;
+}
+
+.news-latam{
+  background-image: url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg');
+}
+
+.news-tech{
+  background-image: url('https://i.postimg.cc/BnxqQ1tJ/PQS-tecnologia-post-coronavirus.jpg');
 }
 
 .categorie-title{
@@ -2237,9 +2244,14 @@ h2{
   --tw-brightness: brightness(1.05);
 }
 
-.item-categorie:hover .title-post-categorie{
+.item-categorie:hover .text-latam{
     --tw-text-opacity: 1;
     color: rgba(61, 178, 255, var(--tw-text-opacity));
+  }
+
+.item-categorie:hover .text-tech{
+    --tw-text-opacity: 1;
+    color: rgba(49, 107, 131, var(--tw-text-opacity));
   }
 
 .title-post-categorie{
@@ -2283,8 +2295,6 @@ h2{
   width: 10rem;
   cursor: pointer;
   border-radius: 0.125rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
   padding: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2292,9 +2302,24 @@ h2{
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.categorie-more:hover{
+.btn-latam{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+}
+
+.btn-latam:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.btn-tech{
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 107, 131, var(--tw-bg-opacity));
+}
+
+.btn-tech:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
 }
 
 .categorie-image{
