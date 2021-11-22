@@ -9,7 +9,8 @@ module.exports = {
       backgroundImage: {
         'banner-latam': "url('https://i.postimg.cc/7b8xXNVS/banner-latam.jpg')",
         'banner-tech': "url('https://i.postimg.cc/BnxqQ1tJ/PQS-tecnologia-post-coronavirus.jpg')",
-        'banner-culture': "url('https://i.postimg.cc/JhhHDWg6/Comunicacio-n-cultural.jpg')",
+        'banner-culture': "url('https://i.postimg.cc/xCsLzKmr/programa-cultural-integra-actividades-organizadas-0-22-990-616.webp')",
+        'banner-sports': "url('https://i.postimg.cc/SNJ71J4G/fb11527d-455e-4730-926e-78e64a1ec1c3.jpg')",
       },
       colors:{
         'nk-blue': '#3DB2FF',
@@ -37,6 +38,7 @@ module.exports = {
       },
       width:{
         '29': '29rem',
+        '90': '22rem',
         '95': '23rem',
       },
       height:{

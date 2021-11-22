@@ -10,7 +10,12 @@
 .news-tech{
     @apply bg-banner-tech;
 }
-
+.news-culture{
+    @apply bg-banner-culture text-gray-900;
+}
+.news-sports{
+    @apply bg-banner-sports;
+}
 .categorie-title{
     @apply text-white;
 }
@@ -24,6 +29,12 @@
 }
 .text-tech{
     @apply text-nk-aqua;
+}
+.text-culture{
+    @apply text-nk-yellow;
+}
+.text-sports{
+    @apply text-nk-green;
 }
 }
 .title-post-categorie{
@@ -50,6 +61,18 @@
 }
 .btn-tech:hover{
     @apply bg-blue-700;
+}
+.btn-culture{
+    @apply bg-nk-yellow;
+}
+.btn-culture:hover{
+    @apply bg-yellow-600;
+}
+.btn-sports{
+    @apply bg-nk-green;
+}
+.btn-sports:hover{
+    @apply bg-green-600;
 }
 .categorie-image{
     @apply m-0;

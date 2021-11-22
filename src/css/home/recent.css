@@ -42,6 +42,6 @@
         @apply flex flex-col;
     }
     .recent-post{
-        @apply w-95;
+        @apply w-90;
     }
 }
