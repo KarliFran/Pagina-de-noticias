@@ -409,7 +409,6 @@ Add the correct display in Chrome and Safari.
 
 .nav-header{
   z-index: 20;
-  height: 18rem;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -475,6 +474,7 @@ Add the correct display in Chrome and Safari.
   --tw-border-opacity: 1;
   border-color: rgba(209, 213, 219, var(--tw-border-opacity));
   padding: 0.5rem;
+  padding-left: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   --tw-text-opacity: 1;
@@ -524,6 +524,15 @@ Add the correct display in Chrome and Safari.
   --tw-bg-opacity: 1;
   background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
   padding: 0.5rem;
+}
+
+.item-sub-menu{
+  display: block;
+  padding-left: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -719,7 +728,7 @@ Add the correct display in Chrome and Safari.
 
 .bar-search{
   position: absolute;
-  width: 6rem;
+  width: 24rem;
   border-radius: 1rem;
   border-width: 1px;
   --tw-border-opacity: 1;

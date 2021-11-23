@@ -11,7 +11,7 @@
     @apply block p-2;
 }
 .nav-header{
-    @apply w-full bg-white z-20 h-72;
+    @apply w-full bg-white z-20;
 }
 .navbar-burger{
 @apply flex items-center px-3 py-2 border rounded text-white border-white;
@@ -29,9 +29,8 @@
     @apply text-sm flex flex-col;
 }
 .menu-item{
-    @apply  block font-bold p-2 border-b-2 border-gray-300 text-gray-700 uppercase;
+    @apply  block font-bold p-2 pl-3 border-b-2 border-gray-300 text-gray-700 uppercase;
 }
-
 .menu-item:hover{
     @apply border-indigo-400 bg-transparent;
 }
@@ -44,12 +43,14 @@
 .btn-login{
     @apply bg-transparent text-white text-base;
 }
-
 .nav-login{
     @apply hidden;
 }
 .social-item-header{
     @apply flex items-center rounded-sm p-2 bg-nk-blue;
+}
+.item-sub-menu{
+@apply block font-bold pl-3 text-gray-700 uppercase;
 }
 
 @media (min-width: 1024px) {
