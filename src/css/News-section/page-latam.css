@@ -109,7 +109,7 @@
         @apply h-80;
     }
     .container-categorie-posts{
-        @apply w-3/5;
+        @apply grid grid-cols-2 w-11/12;
     }
     .section-boletin{
         @apply flex flex-col gap-4;
