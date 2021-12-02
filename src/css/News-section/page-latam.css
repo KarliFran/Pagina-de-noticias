@@ -42,13 +42,13 @@
 }
 
 .description-posts{
-    @apply m-0 text-xl text-justify;
+    @apply m-0 text-base text-justify;
 }
 .item-categorie{
     @apply flex flex-col gap-2 mt-4 p-4;
 }
 .categorie-more{
-    @apply p-3 w-40 rounded-sm text-white text-base cursor-pointer;
+    @apply p-3 w-32 rounded-sm text-white text-base cursor-pointer shadow-xl;
 }
 .btn-latam{
     @apply bg-nk-blue;

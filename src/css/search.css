@@ -1,0 +1,50 @@
+.results-search{
+    @apply flex flex-wrap p-2 gap-8;
+}
+.title-section-search{
+    @apply text-gray-700;
+}
+.img-search{
+    @apply w-full h-full relative;
+}
+.search-picture{
+    @apply m-0 h-80 border rounded-lg p-2 border-gray-400 ;
+}
+.article-search{
+    @apply flex flex-col p-2 pb-6 gap-2 border-b border-gray-400;
+}
+.container-title-search{
+    @apply relative left-8 border-b-2 border-nk-blue;
+}
+.publi-news{
+    @apply p-4;
+}
+.article-search:hover{
+    .text-latam{
+        @apply text-nk-blue;
+    }
+}
+
+@media (min-width:1200px){
+    .conten-page-search{
+        @apply flex;
+    }
+    .results-search{
+        @apply flex justify-evenly w-3/4;
+    }
+    .article-search{
+        @apply w-90;
+    }
+    .search-picture{
+        @apply h-80;
+    }
+    .publi-news{
+        @apply flex flex-row;
+    }
+    .container-title-search{
+        @apply w-3/8;
+    }
+    .article-search{
+        @apply w-29;
+    }
+}

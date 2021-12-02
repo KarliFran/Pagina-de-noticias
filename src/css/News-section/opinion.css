@@ -17,7 +17,7 @@
     @apply grid grid-cols-1 gap-6 pt-4 p-2;
 }
 .container-title-op{
-    @apply relative left-8 w-11/12 border-b-2 border-nk-blue  ;
+    @apply relative left-8 border-b-2 border-nk-blue;
 }
 .container-btn{
     @apply flex justify-end;
@@ -37,5 +37,8 @@
     }
     .info-news-op{
         @apply flex flex-col justify-center w-4/5 p-2;
+    }
+    .container-title-op{
+        @apply w-11/12;
     }
 }
