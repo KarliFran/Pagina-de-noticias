@@ -19,6 +19,9 @@
 .publi-news{
     @apply p-4;
 }
+.short{
+    @apply w-40 bg-gray-500 opacity-100 h-min;
+}
 .article-search:hover{
     .text-latam{
         @apply text-nk-blue;
@@ -46,5 +49,8 @@
     }
     .article-search{
         @apply w-29;
+    }
+    .header-op{
+        @apply text-center;
     }
 }

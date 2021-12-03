@@ -2696,6 +2696,14 @@ h2{
   padding: 1rem;
 }
 
+.short{
+  height: 0.2rem;
+  width: 10rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  opacity: 1;
+}
+
 .article-search:hover .text-latam{
     --tw-text-opacity: 1;
     color: rgba(61, 178, 255, var(--tw-text-opacity));
@@ -2742,6 +2750,10 @@ h2{
 
   .article-search{
     width: 29rem;
+  }
+
+  .header-op{
+    text-align: center;
   }
 }
 
