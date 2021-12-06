@@ -16,6 +16,7 @@
 @import "./News-section/page-latam.css";
 @import "./News-section/opinion.css";
 @import "./search.css";
+@import "./contact.css";
 
 a{
     @apply no-underline;

@@ -1,0 +1,32 @@
+.header-contact{
+    @apply relative block h-98;
+}
+.header-container{
+    @apply absolute top-0 w-full h-full bg-center bg-cover;
+}
+.separacion-header{
+    @apply w-full h-full absolute opacity-50 bg-black;
+}
+.contact-content{
+    @apply relative py-16 bg-nk-blue;
+}
+.conten-card{
+    @apply mx-auto px-4;
+}
+.design-card{
+    @apply relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64;
+}
+.contact-profile{
+    @apply flex flex-wrap justify-center;
+}
+.contaner-img-contact{
+    @apply flex flex-wrap justify-center;
+}
+.picture-contact{
+    @apply shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20;
+}
+@media (min-width:1200px){
+    .picture-contact{
+        @apply -ml-16 w-40 ;
+    }
+}
