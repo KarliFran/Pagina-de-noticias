@@ -99,9 +99,7 @@
     <div>
     <section class="profile-page">
         <section class="header-contact">
-            <div class="header-container" style="
-                background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');
-                ">
+            <div class="header-container">
             <span id="blackOverlay" class="separacion-header"></span>
             </div>
             </section>
@@ -112,24 +110,29 @@
                     <div class="contact-profile">
                     <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                         <div class="container-img-contact">
-                        <img alt="..." src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg" class="picture-contact">
+                        <img alt="..." src="dist/images/logo.png" class="picture-contact">
                         </div>
                     </div>
                     </div>
-                    <div class="text-center mt-12">
-                    <h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                        Jenna Stones
-                    </h3>
-                    <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                        <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                        Los Angeles, California
-                    </div>
-                    <div class="mb-2 text-blueGray-600 mt-10">
-                        <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>Solution Manager - Creative Tim Officer
-                    </div>
-                    <div class="mb-2 text-blueGray-600">
-                        <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>University of Computer Science
-                    </div>
+                    <div class="container-form">
+                        <form class="form-contacto" action="envia.php" method="post">
+                                <div class="form-entry">
+                                    <label class="form-tag-name">
+                                        Nombre
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Name">
+                                </div>
+                                <div class="form-entry">
+                                    <label class="form-tag-name">
+                                        Correo
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="@">
+                                </div>
+                                <div class="form-entry">
+                                    <label class="form-tag-name">Mensaje:</label>
+                                    <textarea name="consulta" class="form-field__input"></textarea>
+                                </div>
+                            </div>
                     </div>
                     <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
                     <div class="flex flex-wrap justify-center">

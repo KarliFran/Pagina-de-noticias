@@ -2,7 +2,7 @@
     @apply relative block h-98;
 }
 .header-container{
-    @apply absolute top-0 w-full h-full bg-center bg-cover;
+    @apply absolute top-0 w-full h-full bg-banner-contac bg-center bg-cover;
 }
 .separacion-header{
     @apply w-full h-full absolute opacity-50 bg-black;
@@ -23,10 +23,25 @@
     @apply flex flex-wrap justify-center;
 }
 .picture-contact{
-    @apply shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20;
+    @apply shadow-xl rounded-lg h-auto align-middle border-none absolute -m-16 -ml-20 bg-gray-900;
+}
+.container-form{
+@apply mt-12;
+}
+.form-entry{
+    @apply flex flex-col;
+}
+.form-input{
+@apply w-96 border border-nk-gray rounded-lg;
+}
+.form-input:hover{
+    @apply border-nk-blue;
+}
+.form-input:focus{
+    @apply outline-none;
 }
 @media (min-width:1200px){
     .picture-contact{
-        @apply -ml-16 w-40 ;
+        @apply -ml-24 w-52;
     }
 }

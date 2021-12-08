@@ -11,6 +11,7 @@ module.exports = {
         'banner-tech': "url('https://i.postimg.cc/BnxqQ1tJ/PQS-tecnologia-post-coronavirus.jpg')",
         'banner-culture': "url('https://i.postimg.cc/xCsLzKmr/programa-cultural-integra-actividades-organizadas-0-22-990-616.webp')",
         'banner-sports': "url('https://i.postimg.cc/SNJ71J4G/fb11527d-455e-4730-926e-78e64a1ec1c3.jpg')",
+        'banner-contac': "url('https://i.postimg.cc/4yct8G1z/ciudad-dallas-edificios-estados-wallpaper-preview.jpg')",
       },
       colors:{
         'nk-blue': '#3DB2FF',
