@@ -1,5 +1,14 @@
+.header-principal{
+    @apply flex flex-col gap-4;
+}
 .header-contact{
     @apply relative block h-98;
+}
+.title-contac{
+    @apply text-xl;
+}
+.header-contact-details{
+    @apply p-4;
 }
 .header-container{
     @apply absolute top-0 w-full h-full bg-banner-contac bg-center bg-cover;
@@ -8,7 +17,7 @@
     @apply w-full h-full absolute opacity-50 bg-black;
 }
 .contact-content{
-    @apply relative py-16 bg-nk-blue;
+    @apply relative py-16 bg-gray-200;
 }
 .conten-card{
     @apply mx-auto px-4;
@@ -28,20 +37,61 @@
 .container-form{
 @apply mt-12;
 }
+.form-info{
+    @apply flex flex-col;
+}
 .form-entry{
     @apply flex flex-col;
 }
 .form-input{
-@apply w-96 border border-nk-gray rounded-lg;
+@apply w-96 border border-gray-400 rounded-xl outline-none;
 }
 .form-input:hover{
     @apply border-nk-blue;
 }
 .form-input:focus{
-    @apply outline-none;
+    @apply outline-none border-none border-nk-blue;
 }
+.form-input:active{
+    @apply border-nk-blue outline-none;
+}
+.container-info{
+    @apply flex flex-col flex-wrap justify-center items-center mt-1 py-10 text-center;
+}
+.info-dist{
+    @apply flex justify-center py-10 border-l text-center;
+}
+.container-description-page{
+    @apply w-full px-4;
+}
+.text-info-contact{
+    @apply mb-4 text-lg leading-relaxed;
+}
+.form-tag-name{
+    @apply text-xl text-nk-blue;
+}
+
+
 @media (min-width:1200px){
     .picture-contact{
         @apply -ml-24 w-52;
+    }
+    .form-info{
+        @apply flex flex-row;
+    }
+    .container-info{
+        @apply w-4/8;
+    }
+    .container-form{
+        @apply w-full p-2;
+    }
+    .container-description-page{
+        @apply w-9/12;
+    }
+    .form-entry{
+        @apply w-98;
+    }
+    .form-input{
+        @apply w-98 rounded-xl;
     }
 }
