@@ -5,7 +5,7 @@
     @apply absolute flex rounded-2xl p-4;
 }
 .bar-search{
-    @apply rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900;
+    @apply rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900 !important;
     &:focus{
         @apply outline-none;
     }
@@ -21,24 +21,27 @@ h1{
 }
 @media (min-width: 1024px) {
     .container-search{
-        @apply flex items-center bg-transparent rounded-full mr-2 static border-0;
+        @apply flex items-center bg-transparent rounded-full mr-2 static border-0 !important;
     }
     .bar-search{
-        @apply text-gray-900 rounded-full w-0 p-0 bg-transparent static border-0;
+        @apply text-gray-900 rounded-full w-0 p-0 bg-transparent static border-0 !important;
         &:focus{
-            @apply outline-none w-40 px-4 py-1 bg-white border-0;
+            @apply outline-none w-40 px-4 py-1 bg-white border-0 !important;
         }
     }
     .btn-search{
         @apply static text-white;
     }
+    input:focus{
+        @apply border-none !important;
+    }
     .container-search:hover{
-        @apply bg-white p-1 border-0;
+        @apply bg-white p-1 border-0 !important;
         .bar-search{
-                @apply px-4 py-1 w-40 bg-white border-0;
+                @apply px-4 py-1 w-40 bg-white border-0 !important;
         }
         .btn-search{
-            @apply text-black bg-white;
+            @apply text-black bg-white !important;
         }
     }
 }

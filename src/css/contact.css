@@ -35,7 +35,7 @@
     @apply shadow-xl rounded-lg h-auto align-middle border-none absolute -m-16 -ml-20 bg-gray-900;
 }
 .container-form{
-@apply mt-12;
+@apply flex flex-col items-center;
 }
 .form-info{
     @apply flex flex-col;
@@ -44,10 +44,10 @@
     @apply flex flex-col;
 }
 .form-input{
-@apply w-96 border border-gray-400 rounded-xl outline-none;
+@apply w-96 border border-gray-400 rounded-xl outline-none !important;
 }
 .form-input:hover{
-    @apply border-nk-blue;
+    @apply border-nk-blue !important;
 }
 .form-input:focus{
     @apply outline-none border-none border-nk-blue;
@@ -70,8 +70,27 @@
 .form-tag-name{
     @apply text-xl text-nk-blue;
 }
-
-
+.form-field__input{
+    @apply rounded-lg border border-gray-400 rounded outline-none !important;
+}
+input:active{
+    @apply outline-none border-none !important;
+}
+.container-description-page{
+    @apply flex flex-col gap-8;
+}
+.picture-item-contact{
+@apply w-12 p-2 border rounded-full border-gray-700 shadow-lg;
+}
+.item-info{
+    @apply flex items-center gap-4 text-gray-700;
+}
+.form-contacto{
+    @apply flex flex-col gap-4;
+}
+.form-field__input:hover{
+    @apply border-nk-blue;
+}
 @media (min-width:1200px){
     .picture-contact{
         @apply -ml-24 w-52;
@@ -83,7 +102,7 @@
         @apply w-4/8;
     }
     .container-form{
-        @apply w-full p-2;
+        @apply flex flex-col justify-center w-full p-2;
     }
     .container-description-page{
         @apply w-9/12;
@@ -92,6 +111,6 @@
         @apply w-98;
     }
     .form-input{
-        @apply w-98 rounded-xl;
+        @apply w-98 rounded-xl !important;
     }
 }
