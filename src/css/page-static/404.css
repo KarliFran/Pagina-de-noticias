@@ -1,0 +1,20 @@
+.element-404{
+    @apply flex flex-col;
+}
+.container-search-contact{
+    @apply relative;
+}
+.bar-search-contact{
+@apply border border-gray-600 p-4 text-base rounded-full w-96 outline-none;
+}
+.btn-search-contact{
+    @apply flex items-center absolute right-0 top-0 w-12 h-12.3 rounded-r-3xl bg-nk-blue;
+}
+.icon-search-contact{
+    @apply text-gray-600;
+}
+@media (min-width:1200px){
+    .element-404{
+        @apply flex flex-row;
+    }
+}
