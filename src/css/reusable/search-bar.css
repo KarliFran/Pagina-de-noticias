@@ -32,9 +32,7 @@ h1{
     .btn-search{
         @apply static text-white;
     }
-    input:focus{
-        @apply border-none !important;
-    }
+
     .container-search:hover{
         @apply bg-white p-1 border-0 !important;
         .bar-search{

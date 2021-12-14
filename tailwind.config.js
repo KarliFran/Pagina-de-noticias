@@ -50,7 +50,7 @@ module.exports = {
         '98':'26rem',
         'h-max': 'max-content',
         'min': '0.2rem',
-        '12.3': '3.6rem',
+        '12.3': '2.6rem',
       },
       inset:{
         '22': '22rem',
