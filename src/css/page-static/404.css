@@ -16,7 +16,18 @@
 .bar-search-404:focus{
     @apply border-nk-blue !important;
 }
-
+.btn-home-container{
+@apply p-8;
+}
+.btn-home-container:hover{
+    @apply transform scale-125 font-bold;
+}
+.btn-home{
+    @apply text-lg p-2 text-white bg-nk-blue rounded transition-all duration-200 shadow-xl;
+}
+.btn-home:hover{
+    @apply  transform scale-100 bg-blue-500;
+}
 .icon-search-404{
     @apply text-white w-6;
 }
