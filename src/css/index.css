@@ -18,6 +18,7 @@
 @import "./search.css";
 @import "./contact.css";
 @import "./page-static/404.css";
+@import "./terms.css";
 
 a{
     @apply no-underline;

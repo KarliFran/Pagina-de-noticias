@@ -1,0 +1,6 @@
+.general-terms{
+    @apply flex flex-col items-center;
+}
+.text-terms{
+    @apply flex flex-col p-4 w-3/5 shadow-xl rounded border border-gray-200;
+}
