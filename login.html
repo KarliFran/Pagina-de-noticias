@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/build/tailwind.css" rel="stylesheet">
+    <title>The Eureka</title>
+</head>
+    <header>
+        <nav class="bar-header ">
+            <a href="index.html" class="logo-header"><img src="dist/images/logo.png" alt=""></a>
+            <div class="menu-nav">
+                <button class="navbar-burger">
+                    <svg class="bar-burguer" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="main-nav" class="container-nav nav-header">
+                <ul class="nav-items">
+                    <li class="sub-menu">
+                    <a href="noticias.html" class="menu-item">
+                        Noticias
+                    </a>
+                    <div class="menu-item-sub-menu">
+                        <ul class="items-sub-menu">
+                            <li class="item-list"><a class="item-sub-menu" href="n-latam.html">LatinoAmerica</a></li>
+                            <li class="item-list"><a class="item-sub-menu"  href="n-tech.html">Tecnologia</a></li>
+                            <li class="item-list"><a class="item-sub-menu"  href="n-culture.html">Cultura</a></li>
+                            <li class="item-list"><a class="item-sub-menu"  href="n-sports.html">Deportes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                    <li>
+                    <a href="page-opinion.html" class="menu-item">
+                        Opinion
+                    </a></li>
+                    <a href="contact.html" class="menu-item">
+                        CONTACT US
+                    </a></li>
+                </ul>
+                <div class="header-search">
+                <div class="container-search">
+                    <input class="bar-search" type="text"  placeholder="Search...">
+                    <button class="btn-search">
+                        <svg class="icon-search" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    </button>
+                </div></div>
+                <div class="nav-login">
+                    <img src="dist/images/user.png" alt="">
+                    <button class="btn-login">Login
+                    </button>
+                </div>
+                <ul class="social-items">
+                    <li><a class="social-item-header" href="" title="Facebook"><img src="dist/images/facebook(3).png" alt=""></a></li>
+                    <li><a class="social-item-header" href="" title="Twitter"><img src="dist/images/twitter.png" alt=""></a></li>
+                    <li><a class="social-item-header" href="" title="Telegram"><img src="dist/images/telegram.png" alt=""></a></li>
+                    <li><a class="social-item-header" href="" title="Google-plus"><img src="dist/images/google-plus.png" alt=""></a></li>
+                    <li><a class="social-item-header" href="" title="Youtube"><img src="dist/images/youtube(4).png" alt=""></a></li>
+                </ul>
+        </nav>
+        <div class="container-top">
+            <div class="letterhead-description">
+            <div class="letterhead">
+                <h3 class="letterhead-title">Top Noticias</h3>
+            </div>
+            <div class="top-news">
+                <p>Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+        </div></div>
+        <div class="date-details">
+            <div class="details-general">
+                <div class="item-details">
+            <img src="dist/images/pin.png" alt="">
+            <p>Venezuela</p></div>
+            <div class="item-details">
+            <img src="dist/images/calendar.png" alt="">
+            <p>24 de septiembre</p></div>
+            <div class="item-details">
+            <img src="dist/images/reloj-de-pared(1).png" alt="">
+            <p>12:00</p></div>
+            <div class="item-details">
+            <img src="dist/images/nube.png" alt="">
+            <p>83°F°C</p></div>
+        </div></div>
+    </header>
+
+
+<div class="font-sans">
+    <div class="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100">
+        <div class="relative sm:max-w-sm w-full">
+            <div class="bg-blue-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
+            <div class="bg-red-400 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
+            <div class="relative w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md">
+                <label for="" class="block mt-3 text-sm text-gray-700 text-center font-semibold">
+                    Login
+                </label>
+                <form method="#" action="#" class="mt-10">
+                    <div>
+                        <input type="email" placeholder="Correo electronico" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+                    </div>
+                    <div class="mt-7">
+                        <input type="password" placeholder="Contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+                    </div>
+
+                    <div class="mt-7 flex">
+                        <label for="remember_me" class="inline-flex items-center w-full cursor-pointer">
+                            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+                            <span class="ml-2 text-sm text-gray-600">
+                                Recuerdame
+                            </span>
+                        </label>
+                        <div class="w-full text-right">
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="#">
+                                ¿Olvidó su contraseña?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-7">
+                        <button class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                            Login
+                        </button>
+                    </div>
+                    <div class="flex mt-7 items-center text-center">
+                        <hr class="border-gray-300 border-1 w-full rounded-md">
+                        <label class="block font-medium text-sm text-gray-600 w-full">
+                            Accede con
+                        </label>
+                        <hr class="border-gray-300 border-1 w-full rounded-md">
+                    </div>
+                    <div class="flex mt-7 justify-center w-full">
+                        <button class="mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                            
+                            Facebook
+                        </button>
+        
+                        <button class="bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                            
+                            Google
+                        </button>
+                    </div>
+        
+                     <div class="mt-7">
+                        <div class="flex justify-center items-center">
+                            <label class="mr-2" >¿Eres nuevo?</label>
+                            <a href="#" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                                Crea una cuenta
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <div class="element-footer">
+        <div class="suscribe-general">
+            <h3 class="title-suscribe">Suscribe</h3>
+            <label class="subscribe-enter" for="mce-EMAIL-tie-newsletter-3">
+                ¡Suscríbase a nuestra lista de correo para recibir las nuevas actualizaciones!
+                </label>
+            <div class="suscribe">
+                <img class="mail-img" src="dist/images/correo-electronico.png" alt="">
+                <input class="input-susbcribe" type="Ingresa tu email">
+                <button class="btn-subscribe">Subscribe</button>
+            </div></div>
+    </div>
+    <section class="info-footer">
+        <a href="index.html" class="logo-foooter"><img src="dist/images/logo.png" alt=""></a>
+        <ul class="site-sections">
+            <h1 class="title-footer">Secciones</h1>
+            <li><a href="" class="sections-item">Noticias</a>
+            <ul>
+                <li>LatinoAmerica</li>
+                <li>Tecnologia</li>
+                <li>Cultura</li>
+                <li>Deportes</li>
+            </ul>
+            </li>
+            <li><a href="" class="sections-item">Opinion</a></li>
+            <li><a href="" class="sections-item">Blogs</a></li>
+        </ul>
+        <div class="social-media">
+            <ul class="social-items">
+                <li><a class="social-item" href="" title="Facebook"><img src="dist/images/facebook(3).png" alt=""></a></li>
+                <li><a class="social-item"href="" title="Twitter"><img src="dist/images/twitter.png" alt=""></a></li>
+                <li><a class="social-item" href="" title="Telegram"><img src="dist/images/telegram.png" alt=""></a></li>
+                <li><a class="social-item" href="" title="Google-plus"><img src="dist/images/google-plus.png" alt=""></a></li>
+                <li><a class="social-item"href="" title="Youtube"><img src="dist/images/youtube(4).png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+    <p class="copyright">&copy; 2021 Karla Silveira</p>
+</footer>
+<script  src="public/build/index.js"></script>
+</body>
+</html>

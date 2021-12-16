@@ -1,6 +1,29 @@
 .general-terms{
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center pb-8;
 }
 .text-terms{
-    @apply flex flex-col p-4 w-3/5 shadow-xl rounded border border-gray-200;
+    @apply flex flex-col p-4 w-full shadow-xl text-justify rounded border border-gray-200 bg-white;
+}
+.container-img-terms{
+    @apply flex absolute left-0;
+}
+.icon-terms{
+    @apply m-0 w-20 shadow-xl;
+}
+.picture-terms{
+    @apply w-full;
+}
+.title-firts{
+    @apply m-0 text-right pr-8;
+}
+@media (min-width:1200px){
+    .container-img-terms{
+        @apply left-52;
+    }
+    .text-terms{
+        @apply w-3/5;
+    }
+    .title-firts{
+        @apply text-center;
+    }
 }
