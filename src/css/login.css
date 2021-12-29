@@ -1,1 +1,98 @@
-
+.container-page-login{
+    @apply flex flex-col justify-center items-center;
+}
+.container-fom-login{
+    @apply w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md;
+}
+.name-login{
+    @apply flex w-full items-center mt-3 text-sm text-gray-700 text-center font-bold ;
+}
+.form-login{
+    @apply mt-10;
+}
+.container-buttom{
+    @apply mt-7 ;
+}
+.btn-form-login{
+    @apply bg-nk-blue w-full cursor-pointer py-3 rounded-xl text-white shadow-xl transition duration-500 ease-in-out transform;
+}
+.btn-form-login:hover{
+    @apply shadow-inner -translate-x-0 scale-105;
+}
+.mail-login{
+    @apply w-full border-none pl-2 bg-gray-100 h-11 rounded-xl shadow-lg;
+}
+.mail-login:hover{
+    @apply bg-blue-100;
+}
+.mail-login:focus{
+    @apply bg-blue-100 ring-0 outline-none;
+}
+.password-container{
+    @apply mt-7;
+}
+.container-more-login{
+    @apply flex mt-7;
+}
+.remember-me{
+    @apply inline-flex items-center w-full cursor-pointer;
+}
+.remember-entry{
+    @apply rounded border-gray-300 text-indigo-600 shadow-sm;
+}
+.remember-entry:focus{
+    @apply ring ring-indigo-200 ring-opacity-50;
+}
+.remember-name{
+    @apply text-sm text-gray-600;
+}
+.container-password-forget{
+    @apply w-full text-right;
+}
+.password-forget{
+    @apply underline text-sm text-gray-600;
+}
+.password-forget:hover{
+    @apply text-gray-900;
+}
+.container-extra{
+    @apply flex mt-7 items-center text-center;
+}
+.sep-login{
+    @apply border-gray-300 border w-full rounded-md;
+}
+.option-login{
+    @apply block font-medium text-sm text-gray-600 w-full;
+}
+.container-option{
+    @apply flex mt-7 justify-center w-full;
+}
+.buttom-facebook{
+    @apply mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl transition duration-500 ease-in-out transform;
+}
+.buttom-facebook:hover{
+    @apply shadow-inner -translate-x-0 scale-105;
+}
+.buttom-google{
+    @apply bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl transition duration-500 ease-in-out transform ;
+}
+.buttom-google:hover{
+    @apply shadow-inner -translate-x-0 scale-105;
+}
+.container-info-extra{
+    @apply mt-7;
+}
+.container-sign-up{
+    @apply flex justify-center items-center;
+}
+.buttom-sign-up{
+    @apply text-blue-500 transition duration-500 ease-in-out  transform ;
+}
+.buttom-sign-up:hover{
+    @apply -translate-x-0 scale-105;
+}
+@media (min-width:1200px){
+    .container-fom-login{
+        @apply w-2/6;
+    }
+}
