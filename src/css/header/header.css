@@ -52,6 +52,9 @@
 .item-sub-menu{
 @apply block font-bold pl-3 text-gray-700 uppercase;
 }
+.menu-item-sub-menu{
+    @apply hidden;
+}
 
 @media (min-width: 1024px) {
     .bar-header{
