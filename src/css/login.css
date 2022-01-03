@@ -62,18 +62,19 @@
 .container-option{
     @apply flex justify-center w-full;
 }
-.buttom-facebook{
-    @apply mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl transition duration-500 ease-in-out transform;
+.buttom-general{
+    @apply mr-5 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl transition duration-500 ease-in-out transform;
 }
-.buttom-facebook:hover{
+.buttom-general:hover{
     @apply shadow-inner -translate-x-0 scale-105;
 }
-.buttom-google{
-    @apply bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl transition duration-500 ease-in-out transform ;
+.facebook{
+    @apply bg-blue-500 ;
 }
-.buttom-google:hover{
-    @apply shadow-inner -translate-x-0 scale-105;
+.google{
+    @apply bg-red-500 ;
 }
+
 .container-sign-up{
     @apply flex justify-center items-center gap-2;
 }

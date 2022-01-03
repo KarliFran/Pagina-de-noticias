@@ -20,7 +20,7 @@
     @apply relative left-8 border-b-2 border-nk-blue;
 }
 .container-btn{
-    @apply flex justify-end;
+    @apply flex justify-end pr-4;
 }
 @media (min-width: 1024px){
     .items-opinion{

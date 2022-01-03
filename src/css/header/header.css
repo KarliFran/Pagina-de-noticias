@@ -41,7 +41,7 @@
     @apply px-2 border-l-2 border-r-2 border-gray-500;
 }
 .btn-login{
-    @apply bg-transparent text-white text-base;
+    @apply bg-transparent text-white text-lg cursor-pointer font-bold;
 }
 .nav-login{
     @apply hidden;
