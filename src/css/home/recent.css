@@ -2,7 +2,7 @@
     @apply bg-gray-100 p-1;
 }
 .container-title{
-    @apply w-9/12 border-b-2 border-nk-blue;
+    @apply w-4/5 border-b-2 border-nk-blue;
 }
 .title-section{
     @apply w-max text-white relative p-2 m-0;
@@ -12,11 +12,14 @@
     content: "";
     border-right: 8px solid transparent;
 }
+.recent-title{
+    @apply w-3/4;
+}
 .container-recent-items{
     @apply flex flex-col gap-4 shadow-2xl;
 }
 .recent-post{
-    @apply relative flex flex-col w-96;
+    @apply relative flex flex-col w-96 transition duration-500 ease-in-out transform;
 }
 .recent-img{
     @apply h-56 mx-0 my-0;
@@ -25,7 +28,7 @@
     @apply flex flex-col items-center gap-4 p-2;
 }
 .recent-post:hover{
-    @apply filter brightness-125;
+    @apply filter brightness-125 ;
 }
 
 @media (min-width: 1024px){

@@ -5,10 +5,10 @@
     @apply flex overflow-x-scroll overflow-y-hidden gap-1 py-4;
 }
 .latam-item{
-    @apply flex flex-col relative min-w-300 ;
+    @apply flex flex-col relative min-w-300 transition duration-500 ease-in-out transform;
 }
 .latam-item:hover{
-    @apply filter brightness-110;
+    @apply filter brightness-75;
 }
 .latam-title{
     @apply truncate;
