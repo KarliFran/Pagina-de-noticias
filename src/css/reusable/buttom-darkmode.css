@@ -1,18 +1,14 @@
 .container-darkmode{
-@apply flex items-center;
+@apply flex items-center absolute;
 }
 .buttom-darkmode{
     @apply flex items-center justify-between relative w-10 h-5 transform scale-150 transition-all duration-200 ease-in-out bg-gray-700 rounded-full shadow-inner outline-none appearance-none;
 }
 .buttom-darkmode::before{
-    @apply absolute w-5 h-5 top-1 left-1 rounded-full bg-white;
+    @apply absolute w-4 h-4 top-0.2 bg-white;
+    left: 1.25rem;
     content: '';
-    position: absolute;
-    width: 1.25rem;
-    height: 1.25rem;
     border-radius: 50%;
-    top: 0;
-    left: 0;
     transform: scale(1.1);
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -21,9 +17,15 @@
 
 .buttom-darkmode:checked {
     @apply: bg-indigo-400;
-    background-color:#7f9cf5;
+    background-color: #3DB2FF;
 }
 
 .buttom-darkmode:checked:before {
-    left: 1.25rem;
+    @apply left-1;
+}
+.icon-sun{
+    @apply absolute p-1;
+}
+.icon-moon{
+    @apply absolute right-0;
 }

@@ -1,0 +1,5 @@
+.dark-theme{
+    .recent-news{
+        @apply bg-gray-800 transition duration-700;
+    }
+}

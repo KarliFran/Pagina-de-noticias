@@ -991,6 +991,7 @@ h1{
   overflow-x: scroll;
   padding: 1rem;
   padding-bottom: 1rem;
+  scrollbar-width: none;
 }
 
 .container-picture{
@@ -3909,6 +3910,7 @@ input:active{
 }
 
 .container-darkmode{
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3965,20 +3967,14 @@ input:active{
 
 .buttom-darkmode::before{
   position: absolute;
-  top: 0.25rem;
-  left: 0.25rem;
-  height: 1.25rem;
-  width: 1.25rem;
-  border-radius: 9999px;
+  top: 2px;
+  height: 1rem;
+  width: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  left: 1.25rem;
   content: '';
-  position: absolute;
-  width: 1.25rem;
-  height: 1.25rem;
   border-radius: 50%;
-  top: 0;
-  left: 0;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -3990,12 +3986,85 @@ input:active{
 
 .buttom-darkmode:checked {
   @apply: bg-indigo-400;
-  background-color:#7f9cf5;
+  background-color: #3DB2FF;
 }
 
 .buttom-darkmode:checked:before {
-  left: 1.25rem;
+  left: 0.25rem;
 }
+
+.icon-sun{
+  position: absolute;
+  padding: 0.25rem;
+}
+
+.icon-moon{
+  position: absolute;
+  right: 0px;
+  padding: 0.25rem;
+}
+
+.dark-theme{
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
+}
+
+.dark-theme .bar-header {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+  }
+
+.dark-theme .date-details{
+    --tw-border-opacity: 1;
+    border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+  }
+
+.dark-theme .recent-news{
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+  }
 
 a{
   text-decoration: none;
@@ -4010,6 +4079,16 @@ body{
   margin: 0px;
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
 }
 
 h1, h2, h3, p, a{

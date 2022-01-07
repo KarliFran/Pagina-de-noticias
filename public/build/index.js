@@ -51,6 +51,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/js/darkmode.js":
+/*!****************************!*\
+  !*** ./src/js/darkmode.js ***!
+  \****************************/
+/***/ (function() {
+
+eval("const   darkmode=document.querySelector('#darkmode'),\n        bodydark=document.querySelector('body');\n\ndarkmode.addEventListener('click',(e)=>{\n    //console.log('Hola juan carlos');\n    bodydark.classList.toggle('dark-theme');\n});\n\n\n\n\n//# sourceURL=webpack://test-project/./src/js/darkmode.js?");
+
+/***/ }),
+
 /***/ "./src/js/hamburger.js":
 /*!*****************************!*\
   !*** ./src/js/hamburger.js ***!
@@ -68,7 +78,7 @@ eval("\n    // Navbar Toggle\n    document.addEventListener('DOMContentLoaded', 
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _videos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./videos */ \"./src/js/videos.js\");\n\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _videos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./videos */ \"./src/js/videos.js\");\n/* harmony import */ var _darkmode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./darkmode */ \"./src/js/darkmode.js\");\n/* harmony import */ var _darkmode__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_darkmode__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
 
 /***/ }),
 

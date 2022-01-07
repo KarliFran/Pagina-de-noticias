@@ -1,0 +1,9 @@
+.dark-theme{
+    @apply text-gray-300 bg-gray-800 transition duration-700;
+    .bar-header {
+        @apply bg-black transition duration-700;
+    }
+    .date-details{
+        @apply border-gray-700 transition duration-700;
+    }
+}

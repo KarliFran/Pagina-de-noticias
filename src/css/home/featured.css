@@ -3,6 +3,7 @@
 }
 .container-news-featured{
     @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4 p-4;
+    scrollbar-width: none;
 }
 
 .container-picture{
