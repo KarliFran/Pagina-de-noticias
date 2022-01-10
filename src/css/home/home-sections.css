@@ -61,6 +61,29 @@
 .container-data{
     @apply flex flex-col gap-2 p-2;
 }
+.section-news{
+    @apply w-max border;
+}
+.container-btn-sections{
+    @apply flex justify-end w-full;
+}
+.section-news{
+    @apply p-3 text-base font-bold rounded text-gray-700 transition duration-500 ease-in-out transform;
+}
+.section-news:hover{
+    @apply text-white  shadow-inner -translate-x-0 scale-105;
+}
+.tech-more{
+    @apply border-nk-aqua;
+}
+.sports-more{
+    @apply border-nk-green;
+}
+.culture-more{
+    @apply border-nk-yellow;
+}
+
+
 
 @media (min-width: 1024px){
     .more-news{
