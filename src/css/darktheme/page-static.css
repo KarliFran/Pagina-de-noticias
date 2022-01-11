@@ -1,0 +1,5 @@
+.dark-theme{
+    .text-terms{
+        @apply bg-transparent transition duration-700;
+    }
+}

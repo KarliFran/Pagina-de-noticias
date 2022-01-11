@@ -1,0 +1,8 @@
+.dark-theme{
+    .section-news{
+        @apply text-white transition duration-700;
+    }
+    .btn-more-news{
+        @apply text-white transition duration-700;
+    }
+}

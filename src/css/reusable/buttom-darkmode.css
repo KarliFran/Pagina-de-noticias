@@ -1,30 +1,30 @@
 .container-darkmode{
-@apply flex items-center absolute right-12;
+@apply flex items-center absolute right-12 !important;
 }
 .buttom-darkmode{
-    @apply flex items-center justify-between relative w-10 h-5 transform scale-150 bg-nk-blue transition-all duration-200 ease-in-out  rounded-full shadow-inner outline-none appearance-none;
+    @apply flex items-center justify-between relative w-10 h-5 transform scale-150 bg-nk-blue transition-all duration-200 ease-in-out  rounded-full shadow-inner outline-none appearance-none !important;
 }
 .buttom-darkmode::before{
-    @apply absolute w-4 h-4 top-0.2 bg-white;
-    left: 1.25rem;
-    content: '';
-    border-radius: 50%;
-    transform: scale(1.1);
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
-    background-color: white;
-    transition: .2s ease-in-out;
+    @apply absolute w-4 h-4 top-0.2 bg-white !important;
+    left: 1.25rem !important;
+    content: '' !important;
+    border-radius: 50% !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+    background-color: white !important;
+    transition: .2s ease-in-out !important;
 }
 
 .buttom-darkmode:checked {
-    @apply bg-gray-700;
+    @apply bg-gray-700 !important;
 }
 
 .buttom-darkmode:checked:before {
-    @apply left-1;
+    @apply left-1 !important;
 }
 .icon-sun{
-    @apply absolute w-5 opacity-0;
+    @apply absolute w-5 opacity-0 !important;
 }
 .icon-moon{
-    @apply absolute w-4 right-0;
+    @apply absolute w-4 right-0 !important;
 }

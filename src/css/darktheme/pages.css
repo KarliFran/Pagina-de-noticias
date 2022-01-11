@@ -14,4 +14,28 @@
     .more-news-item:hover{
         @apply filter brightness-50;
     }
+    .sections-news:nth-child(2n+1){
+        @apply bg-gray-700;
+    }
+    .title-post-categorie{
+        @apply text-white;
+    }
+    .page-link{
+        @apply text-white bg-nk-blue transition duration-700;
+    }
+    .page-link:hover{
+        @apply bg-transparent text-white;
+    }
+    .title-opinion{
+        @apply text-white;
+    }
+    .info-news-op{
+        @apply bg-gray-800 shadow-2xl border border-l-0 border-gray-500 transition duration-700;
+    }
+    .title-section-search{
+        @apply text-white transition duration-700;
+    }
+    .container-fom-login{
+        @apply bg-gray-800 text-white border border-gray-600 transition duration-700;
+    }
 }
