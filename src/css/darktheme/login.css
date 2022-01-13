@@ -1,0 +1,5 @@
+.dark-theme{
+    .name-dark{
+        @apply text-white transition duration-700;
+    }
+}

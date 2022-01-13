@@ -38,4 +38,7 @@
     .container-fom-login{
         @apply bg-gray-800 text-white border border-gray-600 transition duration-700;
     }
+    .container-title-categorie{
+        @apply filter brightness-75 transition duration-700;
+    }
 }

@@ -23,8 +23,8 @@
     @apply left-1 !important;
 }
 .icon-sun{
-    @apply absolute w-5 opacity-0 !important;
+    @apply absolute w-5 opacity-0;
 }
 .icon-moon{
-    @apply absolute w-4 right-0 !important;
+    @apply absolute w-4 right-0;
 }
