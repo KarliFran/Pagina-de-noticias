@@ -57,7 +57,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************/
 /***/ (function() {
 
-eval("const   darkmode=document.querySelector('#darkmode'),\n        bodydark=document.querySelector('body');\n\ndarkmode.addEventListener('click',(e)=>{\n    //console.log('Hola juan carlos');\n    bodydark.classList.toggle('dark-theme');\n});\n\n\n\n\n//# sourceURL=webpack://test-project/./src/js/darkmode.js?");
+eval("const   darkmode=document.querySelector('#darkmode'),\n        bodydark=document.querySelector('body');\n\nlet aux = 0;\ndarkmode.addEventListener('click',(e)=>{\n    //console.log('Hola juan carlos');\n    bodydark.classList.toggle('dark-theme');\n\n    if(aux==0){\n        localStorage.setItem('dark_mode', 'true');\n        aux=1;\n    }else{\n        localStorage.setItem('dark_mode','false');\n        aux=0;\n    }\n});\n\nlet dark = localStorage.getItem('dark_mode');\n\nif(dark=='true'){\n    bodydark.classList.add('dark-theme');\n    aux=1;\n}else{\n    bodydark.classList.remove('dark-theme');\n    aux=0;\n}\n\n\n\n\n//# sourceURL=webpack://test-project/./src/js/darkmode.js?");
 
 /***/ }),
 
