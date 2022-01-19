@@ -22,6 +22,7 @@
 @import "./login.css";
 @import "./reusable/buttom-darkmode.css";
 @import "./darktheme/darkmode.css";
+@import "./home/opinion.css";
 
 a{
     @apply no-underline;

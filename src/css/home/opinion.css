@@ -1,0 +1,42 @@
+.container-op-home{
+    @apply flex flex-col;
+}
+.pic-opinion{
+    @apply m-0;
+}
+.img-opinion{
+    @apply w-full h-full;
+}
+.item-opinion-home{
+    @apply bg-white rounded-lg shadow-inner overflow-hidden mb-10;
+}
+.info-op-home{
+    @apply p-3;
+}
+.description-opinion{
+    @apply text-justify;
+}
+.container-btn-op{
+    @apply flex justify-end p-1;
+}
+.btn-op-more{
+    @apply p-3 rounded-md bg-nk-blue text-white shadow-inner transition duration-700 ease-in-out transform;
+}
+.btn-op-more:hover{
+    @apply -translate-x-0 scale-105;
+}
+.opinion-home{
+    @apply flex flex-col gap-4 items-center;
+}
+
+@media (min-width: 1024px){
+    .container-op-home{
+        @apply flex flex-row w-full gap-8 justify-center;
+    }
+    .item-opinion-home{
+        @apply w-3/12;
+    }
+    .pic-opinion{
+        @apply h-64;
+    }
+}

@@ -59,7 +59,7 @@
     @apply border-nk-green;
 }
 .container-data{
-    @apply flex flex-col gap-2 p-2;
+    @apply flex flex-col gap-2 p-2 w-48;
 }
 .section-news{
     @apply w-max border;
@@ -82,7 +82,12 @@
 .culture-more{
     @apply border-nk-yellow;
 }
-
+.more-data{
+    @apply w-full;
+}
+.more-title{
+    @apply w-full;
+}
 
 
 @media (min-width: 1024px){
@@ -97,5 +102,8 @@
     }
     .more-img{
         @apply h-24;
+    }
+    .container-data{
+        @apply w-96;
     }
 }
