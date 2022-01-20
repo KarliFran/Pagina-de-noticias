@@ -86,7 +86,10 @@ input:active{
     @apply flex items-center gap-4 text-gray-700;
 }
 .form-contacto{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 w-80 ;
+}
+.form-input{
+    @apply w-full !important;
 }
 .form-field__input:hover{
     @apply border-nk-blue;
@@ -103,6 +106,9 @@ input:active{
     }
     .container-form{
         @apply flex flex-col justify-center w-full p-2;
+    }
+    .form-contacto{
+        @apply w-98;
     }
     .container-description-page{
         @apply w-9/12;
