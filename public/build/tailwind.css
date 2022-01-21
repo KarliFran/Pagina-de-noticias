@@ -1753,7 +1753,11 @@ h1{
   }
 
   .container-data{
-    width: 24rem;
+    width: 16rem;
+  }
+
+  .more-img{
+    width: 100%;
   }
 }
 

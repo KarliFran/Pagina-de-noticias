@@ -23,6 +23,7 @@
 @import "./reusable/buttom-darkmode.css";
 @import "./darktheme/darkmode.css";
 @import "./home/opinion.css";
+@import "./page-static/news.css";
 
 a{
     @apply no-underline;
