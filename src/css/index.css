@@ -2,28 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "./header/header.css";
-@import "./reusable/search-bar.css";
-@import "./header/top-news.css";
-@import "./home/featured.css";
-@import "./home/recent.css";
-@import "./home/latam.css";
-@import "./home/home-sections.css";
+@import "./header/header-main.css";
 @import "./footer/principal.css";
-@import "./home/api.css";
-@import "./reusable/boletin.css";
-@import "./News-section/page-news.css";
-@import "./News-section/page-latam.css";
-@import "./News-section/opinion.css";
-@import "./search.css";
-@import "./contact.css";
-@import "./page-static/404.css";
-@import "./page-static/terms.css";
-@import "./login.css";
-@import "./reusable/buttom-darkmode.css";
+@import "./home/home-main.css";
 @import "./darktheme/darkmode.css";
-@import "./home/opinion.css";
-@import "./page-static/news.css";
+@import "./page-static/static.css";
+@import "./pages/pages.css";
+@import "./reusable/reusable.css";
+@import "./News-section/section.css";
 
 a{
     @apply no-underline;
