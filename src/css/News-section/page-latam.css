@@ -4,6 +4,9 @@
 .container-title-categorie{
     @apply bg-center bg-cover bg-opacity-25 p-4;
 }
+.latam-title{
+    @apply border-nk-blue;
+}
 .news-latam{
     @apply bg-banner-latam;
 }

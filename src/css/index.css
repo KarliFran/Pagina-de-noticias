@@ -9,8 +9,7 @@
 @import "./page-static/static.css";
 @import "./pages/pages.css";
 @import "./reusable/reusable.css";
-@import "./News-section/section.css";
-
+@import "./News-section/sections.css";
 a{
     @apply no-underline;
 }

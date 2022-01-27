@@ -2037,8 +2037,6 @@ h2{
 .container-title{
   width: 80%;
   border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 .title-section{
@@ -2631,6 +2629,37 @@ h2{
             transition-duration: 700ms;
   }
 
+.dark-theme .extract-news{
+    --tw-text-opacity: 1;
+    color: rgba(243, 244, 246, var(--tw-text-opacity));
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+  }
+
+.dark-theme .container-cita{
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    opacity: 0.8;
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+  }
+
 .element-404{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2855,6 +2884,97 @@ h2{
   .title-defeat{
     padding-left: 0px;
     text-align: left;
+  }
+}
+
+.news{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.container-new{
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.news-pict{
+  margin: 0px;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.new-img{
+  width: 100%;
+}
+
+.title-new{
+  text-align: justify;
+}
+
+.extract-news{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  opacity: 0.75;
+}
+
+.text-news{
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.second-pict{
+  width: 100%;
+}
+
+.container-cita{
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+}
+
+.cita-news{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width:1200px){
+  .news{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .container-new{
+    width: 60%;
   }
 }
 
@@ -4183,6 +4303,11 @@ h1{
   background-size: cover;
   background-position: center;
   padding: 1rem;
+}
+
+.latam-title{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 .news-latam{

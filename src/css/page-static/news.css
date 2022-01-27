@@ -1,0 +1,38 @@
+.news{
+    @apply flex flex-col justify-center gap-4;
+}
+.container-new{
+    @apply w-full p-2;
+}
+.news-pict{
+    @apply w-full m-0 p-1;
+}
+.new-img{
+    @apply w-full;
+}
+.title-new{
+    @apply text-justify;
+}
+.extract-news{
+    @apply p-2 text-black border border-gray-500 opacity-75;
+}
+.text-news{
+    @apply text-base text-justify;
+}
+.second-pict{
+    @apply w-full;
+}
+.container-cita{
+    @apply bg-gray-400 bg-opacity-100 ;
+}
+.cita-news{
+    @apply text-justify text-base p-2 mx-0 my-1 border-l-4 border-gray-300 text-white;
+}
+@media (min-width:1200px){
+    .news{
+        @apply flex flex-row;
+    }
+    .container-new{
+        @apply w-3/5;
+    }
+}

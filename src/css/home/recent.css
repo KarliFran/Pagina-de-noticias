@@ -2,7 +2,7 @@
     @apply bg-gray-100 p-1;
 }
 .container-title{
-    @apply w-4/5 border-b-2 border-nk-blue;
+    @apply w-4/5 border-b-2;
 }
 .title-section{
     @apply w-max text-white relative p-2 m-0;
