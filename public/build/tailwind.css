@@ -2003,6 +2003,11 @@ h2{
   gap: 1rem;
 }
 
+.general{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+}
+
 @media (min-width: 1024px){
   .container-op-home{
     display: -webkit-box;
