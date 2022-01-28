@@ -1,11 +1,11 @@
 .header-search{
-    @apply flex items-center h-8;
+    @apply flex items-center h-8 transition duration-500;
 }
 .container-search{
-    @apply absolute flex rounded-2xl p-4;
+    @apply absolute flex rounded-2xl p-4 transition duration-300;
 }
 .bar-search{
-    @apply rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900 !important;
+    @apply rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900 transition duration-300 !important;
     &:focus{
         @apply outline-none;
     }
@@ -14,7 +14,7 @@ h1{
     @apply font-serif;
 }
 .btn-search{
-    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-22 z-10 p-0 top-1 cursor-pointer;
+    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-22 z-10 p-0 top-1 cursor-pointer transition duration-500;
 }
 .icon-search{
     @apply w-6;
