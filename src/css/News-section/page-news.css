@@ -11,7 +11,7 @@
     @apply p-3 text-gray-800 text-3xl animate-pulse transition duration-500 ease-in-out transform;
 }
 
-.latam:hover{
+.latam-more:hover{
 @apply bg-nk-blue border-nk-blue shadow-inner -translate-x-0 scale-105;
 .btn-more-news{
 @apply text-white;

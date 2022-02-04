@@ -1,5 +1,5 @@
 .letterhead::before{
-    @apply z-10 absolute w-0 h-0 border-t-8 border-nk-blue top-0 -right-2 ;
+    @apply z-10 absolute w-0 h-0 border-t-8 top-0 -right-2 ;
     content: "";
     border-right: 8px solid transparent;
 }

@@ -723,8 +723,6 @@ Add the correct display in Chrome and Safari.
 
 .letterhead{
   position: absolute;
-  --tw-bg-opacity: 1;
-  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
   padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -738,10 +736,18 @@ Add the correct display in Chrome and Safari.
   height: 0px;
   width: 0px;
   border-top-width: 8px;
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
   content: "";
   border-right: 8px solid transparent;
+}
+
+.latam{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+}
+
+.latam{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 .letterhead-title{
@@ -1392,6 +1398,11 @@ h2{
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.latam::before{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+}
+
 .sports{
   --tw-bg-opacity: 1;
   background-color: rgba(97, 177, 90, var(--tw-bg-opacity));
@@ -1859,7 +1870,6 @@ h2{
 
 .latam-title{
   margin: 0px;
-  padding-left: 0.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -2225,8 +2235,6 @@ h2{
   height: 0px;
   width: 0px;
   border-top-width: 8px;
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
   content: "";
   border-right: 8px solid transparent;
 }
@@ -4773,7 +4781,7 @@ h1{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.latam:hover{
+.latam-more:hover{
   --tw-translate-x: 0px;
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -4786,7 +4794,7 @@ h1{
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.latam:hover .btn-more-news{
+.latam-more:hover .btn-more-news{
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }

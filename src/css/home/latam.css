@@ -18,7 +18,7 @@
     @apply text-white pl-1 font-bold text-xs;
 }
 .latam-title{
-    @apply m-0 text-white pl-1 font-bold;
+    @apply m-0 text-white font-bold;
 }
 .section-poster{
     @apply flex justify-center;

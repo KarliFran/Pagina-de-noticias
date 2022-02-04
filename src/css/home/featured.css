@@ -5,7 +5,6 @@
     @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4 p-4;
     scrollbar-width: none;
 }
-
 .container-picture{
     @apply w-full h-56 m-0;
 }
@@ -26,6 +25,9 @@
 }
 .featured-title{
     @apply m-0 text-white pl-1 font-bold;
+}
+.latam::before{
+    @apply border-nk-blue;
 }
 .sports{
     @apply bg-nk-green;
