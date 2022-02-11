@@ -5,7 +5,7 @@
     @apply absolute flex rounded-2xl p-4 transition duration-300;
 }
 .bar-search{
-    @apply rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900 transition duration-300 !important;
+    @apply w-80 rounded-2xl p-2 absolute border border-nk-blue w-96 text-gray-900 transition duration-300 !important;
     &:focus{
         @apply outline-none;
     }

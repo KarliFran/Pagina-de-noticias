@@ -4207,6 +4207,7 @@ input:active{
 
 .bar-search{
   position: absolute !important;
+  width: 20rem !important;
   width: 24rem !important;
   border-radius: 1rem !important;
   border-width: 1px !important;
