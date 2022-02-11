@@ -5,7 +5,7 @@
     @apply flex;
 }
 .container-api{
-    @apply flex flex-col justify-around w-96;
+    @apply flex flex-col justify-around w-full;
 }
 .videos-destacado{
     @apply w-full h-64;
