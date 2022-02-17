@@ -48,7 +48,4 @@
     .container-title{
         @apply w-4/5;
     }
-    .recent-title{
-        @apply w-3/8;
-    }
 }

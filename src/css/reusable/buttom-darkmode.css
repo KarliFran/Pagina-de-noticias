@@ -1,5 +1,5 @@
 .container-darkmode{
-@apply flex items-center absolute right-24 !important;
+@apply flex items-center absolute right-24 top-11 !important;
 }
 .buttom-darkmode{
     @apply flex items-center justify-between relative w-10 h-5 transform scale-150 bg-nk-blue transition-all duration-200 ease-in-out  rounded-full shadow-inner outline-none appearance-none !important;

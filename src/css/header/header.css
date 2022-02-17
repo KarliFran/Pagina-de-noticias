@@ -44,7 +44,7 @@
     @apply bg-transparent text-white text-lg cursor-pointer font-bold;
 }
 .nav-login{
-    @apply hidden;
+    @apply relative left-1/6 w-1/3 rounded-2xl m-6 flex items-center gap-2 bg-gray-900 p-1 justify-center;
 }
 .social-item-header{
     @apply flex items-center rounded-sm p-2 bg-nk-blue;

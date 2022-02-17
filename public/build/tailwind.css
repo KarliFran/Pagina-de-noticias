@@ -513,7 +513,24 @@ Add the correct display in Chrome and Safari.
 }
 
 .nav-login{
-  display: none;
+  position: relative;
+  left: 31%;
+  margin: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.333333%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  padding: 0.25rem;
 }
 
 .social-item-header{
@@ -2220,10 +2237,6 @@ h2{
   .container-title{
     width: 80%;
   }
-
-  .recent-title{
-    width: 70%;
-  }
 }
 
 .letterhead::before{
@@ -2283,6 +2296,11 @@ h2{
             transition-duration: 150ms;
     -webkit-transition-duration: 700ms;
             transition-duration: 700ms;
+  }
+
+.dark-theme .main-nav{
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
   }
 
 .dark-theme .section-news{
@@ -4064,6 +4082,7 @@ input:active{
 
 .container-darkmode{
   position: absolute !important;
+  top: 2.75rem !important;
   right: 6rem !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -4207,7 +4226,6 @@ input:active{
 .bar-search{
   position: absolute !important;
   width: 20rem !important;
-  width: 24rem !important;
   border-radius: 1rem !important;
   border-width: 1px !important;
   --tw-border-opacity: 1 !important;

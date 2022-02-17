@@ -6,4 +6,7 @@
     .date-details{
         @apply border-gray-700 transition duration-700;
     }
+    .main-nav{
+        @apply bg-gray-600;
+    }
 }
