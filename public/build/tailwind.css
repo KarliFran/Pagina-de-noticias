@@ -618,7 +618,8 @@ Add the correct display in Chrome and Safari.
   }
 
   .nav-login{
-    display: block;
+    left: 0px;
+    border-radius: 0px;
   }
 
   .social-item-header{
@@ -2298,9 +2299,17 @@ h2{
             transition-duration: 700ms;
   }
 
-.dark-theme .main-nav{
+.dark-theme .nav-header{
     --tw-bg-opacity: 1;
-    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(229, 231, 235, var(--tw-text-opacity));
+  }
+
+@media (min-width: 1024px){
+    .dark-theme .nav-header{
+      background-color: transparent;
+    }
   }
 
 .dark-theme .section-news{

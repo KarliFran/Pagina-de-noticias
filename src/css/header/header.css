@@ -79,7 +79,7 @@
         @apply bg-transparent pt-2 h-32;
     }
     .nav-login{
-        @apply block;
+        @apply rounded-none left-0;
     }
     .social-item-header{
         @apply p-0 bg-transparent;

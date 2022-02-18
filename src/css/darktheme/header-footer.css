@@ -6,7 +6,12 @@
     .date-details{
         @apply border-gray-700 transition duration-700;
     }
-    .main-nav{
-        @apply bg-gray-600;
+    .nav-header{
+        @apply bg-gray-700 text-gray-200;
+    }
+    @media (min-width: 1024px){
+        .nav-header{
+            @apply bg-transparent;
+        }
     }
 }
