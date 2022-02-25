@@ -1897,6 +1897,9 @@ h2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2304,6 +2307,15 @@ h2{
     background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(229, 231, 235, var(--tw-text-opacity));
+  }
+
+.dark-theme .menu-item{
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+.dark-theme .nav-login{
+    background-color: transparent;
   }
 
 @media (min-width: 1024px){
@@ -3093,30 +3105,19 @@ h2{
   }
 }
 
-.header-principal{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-}
-
 .header-contact{
   position: relative;
   display: block;
   height: 26rem;
 }
 
+.icon-contact{
+  width: 2rem;
+}
+
 .title-contac{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.header-contact-details{
-  padding: 1rem;
 }
 
 .header-container{
@@ -3246,29 +3247,55 @@ h2{
 }
 
 .form-input{
-  width: 24rem !important;
-  border-radius: 0.75rem !important;
-  border-width: 1px !important;
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(156, 163, 175, var(--tw-border-opacity)) !important;
-  outline: 2px solid transparent !important;
-  outline-offset: 2px !important;
-}
-
-.form-input:hover{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity)) !important;
-}
-
-.form-input:focus{
-  border-style: none;
+  width: 24rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
+.form-input:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-input:active{
+  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(61, 178, 255, var(--tw-border-opacity));
   outline: 2px solid transparent;
@@ -3331,19 +3358,21 @@ h2{
 }
 
 .form-field__input{
-  border-radius: 0.25rem !important;
-  border-radius: 0.5rem !important;
-  border-width: 1px !important;
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(156, 163, 175, var(--tw-border-opacity)) !important;
-  outline: 2px solid transparent !important;
-  outline-offset: 2px !important;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+  padding: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 input:active{
-  border-style: none !important;
-  outline: 2px solid transparent !important;
-  outline-offset: 2px !important;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .container-description-page{
@@ -3358,7 +3387,10 @@ input:active{
 }
 
 .picture-item-contact{
-  width: 3rem;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -3394,7 +3426,7 @@ input:active{
 }
 
 .form-input{
-  width: 100% !important;
+  width: 100%;
 }
 
 .form-field__input:hover{
@@ -3450,8 +3482,8 @@ input:active{
   }
 
   .form-input{
-    width: 32rem !important;
-    border-radius: 0.75rem !important;
+    width: 32rem;
+    border-radius: 0.75rem;
   }
 }
 
@@ -4090,89 +4122,89 @@ input:active{
 }
 
 .container-darkmode{
-  position: absolute !important;
-  top: 2.75rem !important;
-  right: 6rem !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  position: absolute;
+  top: 2.75rem;
+  right: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .buttom-darkmode{
-  position: relative !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  height: 1.25rem !important;
-  width: 2.5rem !important;
-  --tw-translate-x: 0 !important;
-  --tw-translate-y: 0 !important;
-  --tw-rotate: 0 !important;
-  --tw-skew-x: 0 !important;
-  --tw-skew-y: 0 !important;
-  --tw-scale-x: 1 !important;
-  --tw-scale-y: 1 !important;
-  -webkit-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
-          transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
-  --tw-scale-x: 1.5 !important;
-  --tw-scale-y: 1.5 !important;
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-          appearance: none !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
-  border-radius: 9999px !important;
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(61, 178, 255, var(--tw-bg-opacity)) !important;
-  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06) !important;
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-  outline: 2px solid transparent !important;
-  outline-offset: 2px !important;
-  -webkit-transition-property: all !important;
-  transition-property: all !important;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-  -webkit-transition-duration: 150ms !important;
-          transition-duration: 150ms !important;
-  -webkit-transition-duration: 200ms !important;
-          transition-duration: 200ms !important;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.25rem;
+  width: 2.5rem;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  -webkit-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttom-darkmode::before{
-  position: absolute !important;
-  top: 2px !important;
-  height: 1rem !important;
-  width: 1rem !important;
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
-  left: 1.25rem !important;
-  content: '' !important;
-  border-radius: 50% !important;
-  -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
-  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
-          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
-  background-color: white !important;
-  -webkit-transition: .2s ease-in-out !important;
-  transition: .2s ease-in-out !important;
+  position: absolute;
+  top: 2px;
+  height: 1rem;
+  width: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  left: 1.25rem;
+  content: '' ;
+  border-radius: 50% ;
+  -webkit-transform: scale(1.1) ;
+          transform: scale(1.1) ;
+  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) ;
+          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) ;
+  background-color: white ;
+  -webkit-transition: .2s ease-in-out ;
+  transition: .2s ease-in-out ;
 }
 
 .buttom-darkmode:checked {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(55, 65, 81, var(--tw-bg-opacity)) !important;
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
 .buttom-darkmode:checked:before {
-  left: 0.25rem !important;
+  left: 0.25rem;
 }
 
 .icon-sun{
@@ -4189,7 +4221,7 @@ input:active{
 
 @media (min-width: 1024px){
   .container-darkmode{
-    right: 3rem !important;
+    right: 3rem;
   }
 }
 
@@ -4233,25 +4265,25 @@ input:active{
 }
 
 .bar-search{
-  position: absolute !important;
-  width: 20rem !important;
-  border-radius: 1rem !important;
-  border-width: 1px !important;
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity)) !important;
-  padding: 0.5rem !important;
-  --tw-text-opacity: 1 !important;
-  color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
-  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter !important;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter !important;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter !important;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-  -webkit-transition-duration: 150ms !important;
-          transition-duration: 150ms !important;
-  -webkit-transition-duration: 300ms !important;
-          transition-duration: 300ms !important;
+  position: absolute;
+  width: 20rem;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .bar-search:focus{
@@ -4301,40 +4333,40 @@ h1{
 
 @media (min-width: 1024px) {
   .container-search{
-    position: static !important;
-    margin-right: 0.5rem !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    border-radius: 9999px !important;
-    border-width: 0px !important;
-    background-color: transparent !important;
+    position: static;
+    margin-right: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 9999px;
+    border-width: 0px;
+    background-color: transparent;
   }
 
   .bar-search{
-    position: static !important;
-    width: 0px !important;
-    border-radius: 9999px !important;
-    border-width: 0px !important;
-    background-color: transparent !important;
-    padding: 0px !important;
-    --tw-text-opacity: 1 !important;
-    color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
+    position: static;
+    width: 0px;
+    border-radius: 9999px;
+    border-width: 0px;
+    background-color: transparent;
+    padding: 0px;
+    --tw-text-opacity: 1;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
   }
     .bar-search:focus{
-      width: 10rem !important;
-      border-width: 0px !important;
-      --tw-bg-opacity: 1 !important;
-      background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
-      padding-left: 1rem !important;
-      padding-right: 1rem !important;
-      padding-top: 0.25rem !important;
-      padding-bottom: 0.25rem !important;
-      outline: 2px solid transparent !important;
-      outline-offset: 2px !important;
+      width: 10rem;
+      border-width: 0px;
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
     }
 
   .btn-search{
@@ -4344,26 +4376,26 @@ h1{
   }
 
   .container-search:hover{
-    border-width: 0px !important;
-    --tw-bg-opacity: 1 !important;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
-    padding: 0.25rem !important;
+    border-width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    padding: 0.25rem;
   }
     .container-search:hover .bar-search{
-      width: 10rem !important;
-      border-width: 0px !important;
-      --tw-bg-opacity: 1 !important;
-      background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
-      padding-left: 1rem !important;
-      padding-right: 1rem !important;
-      padding-top: 0.25rem !important;
-      padding-bottom: 0.25rem !important;
+      width: 10rem;
+      border-width: 0px;
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
     }
     .container-search:hover .btn-search{
-      --tw-bg-opacity: 1 !important;
-      background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
-      --tw-text-opacity: 1 !important;
-      color: rgba(0, 0, 0, var(--tw-text-opacity)) !important;
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+      --tw-text-opacity: 1;
+      color: rgba(0, 0, 0, var(--tw-text-opacity));
     }
 }
 

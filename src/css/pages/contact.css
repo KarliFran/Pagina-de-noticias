@@ -1,14 +1,12 @@
-.header-principal{
-    @apply flex flex-col gap-4;
-}
+
 .header-contact{
     @apply relative block h-98;
 }
+.icon-contact{
+    @apply w-8;
+}
 .title-contac{
     @apply text-xl;
-}
-.header-contact-details{
-    @apply p-4;
 }
 .header-container{
     @apply absolute top-0 w-full h-full bg-banner-contac bg-center bg-cover;
@@ -44,16 +42,16 @@
     @apply flex flex-col;
 }
 .form-input{
-@apply w-96 border border-gray-400 rounded-xl outline-none !important;
+@apply w-96 p-3 text-base border border-gray-400 rounded-xl outline-none ;
 }
 .form-input:hover{
-    @apply border-nk-blue !important;
+    @apply border-nk-blue transition duration-500 ease-in-out;
 }
 .form-input:focus{
-    @apply outline-none border-none border-nk-blue;
+    @apply outline-none border border-nk-blue transition duration-500 ease-in-out;
 }
 .form-input:active{
-    @apply border-nk-blue outline-none;
+    @apply border border-nk-blue outline-none;
 }
 .container-info{
     @apply flex flex-col flex-wrap justify-center items-center mt-1 py-10 text-center;
@@ -71,16 +69,16 @@
     @apply text-xl text-nk-blue;
 }
 .form-field__input{
-    @apply rounded-lg border border-gray-400 rounded outline-none !important;
+    @apply h-40 rounded-lg border border-gray-400 outline-none p-4;
 }
 input:active{
-    @apply outline-none border-none !important;
+    @apply outline-none border-nk-blue ;
 }
 .container-description-page{
     @apply flex flex-col gap-8;
 }
 .picture-item-contact{
-@apply w-12 p-2 border rounded-full border-gray-700 shadow-lg;
+@apply flex m-0 p-2 border rounded-full border-gray-700 shadow-lg;
 }
 .item-info{
     @apply flex items-center gap-4 text-gray-700;
@@ -89,7 +87,7 @@ input:active{
     @apply flex flex-col gap-4 w-80 ;
 }
 .form-input{
-    @apply w-full !important;
+    @apply w-full ;
 }
 .form-field__input:hover{
     @apply border-nk-blue;
@@ -117,6 +115,6 @@ input:active{
         @apply w-98;
     }
     .form-input{
-        @apply w-98 rounded-xl !important;
+        @apply w-98 rounded-xl;
     }
 }

@@ -21,7 +21,7 @@
     @apply m-0 text-white font-bold;
 }
 .section-poster{
-    @apply flex justify-center;
+    @apply flex justify-center items-center;
 }
 .second-info{
     @apply block;

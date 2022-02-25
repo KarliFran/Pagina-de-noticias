@@ -9,6 +9,12 @@
     .nav-header{
         @apply bg-gray-700 text-gray-200;
     }
+    .menu-item{
+        @apply text-white;
+    }
+    .nav-login{
+        @apply bg-transparent;
+    }
     @media (min-width: 1024px){
         .nav-header{
             @apply bg-transparent;
