@@ -1,7 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
 @import "./header/header-main.css";
 @import "./footer/principal.css";
 @import "./home/home-main.css";
@@ -10,18 +9,6 @@
 @import "./pages/pages.css";
 @import "./reusable/reusable.css";
 @import "./News-section/sections.css";
-a{
-    @apply no-underline;
-}
-ul{
-    @apply list-none pl-0;
-}
-body{
-    @apply m-0 bg-gray-100 transition duration-700;
-}
-h1, h2, h3, p, a{
-    @apply font-serif;
-}
 
 
 
