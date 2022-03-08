@@ -1,8 +1,8 @@
 .dark-theme{
     .extract-news{
-        @apply text-gray-100 transition duration-700;
+        @apply text-gray-100;
     }
     .container-cita{
-        @apply bg-gray-900 opacity-80 transition duration-700;
+        @apply bg-gray-900 opacity-80;
     }
 }

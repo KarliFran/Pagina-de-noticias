@@ -1,11 +1,12 @@
 .dark-theme{
+    @apply transition duration-700;
     .section-news{
-        @apply text-white transition duration-700;
+        @apply text-white;
     }
     .btn-more-news{
-        @apply text-white transition duration-700;
+        @apply text-white;
     }
     .item-opinion-home{
-        @apply bg-transparent shadow-inner border border-nk-blue text-gray-50 transition duration-700;
+        @apply bg-transparent shadow-inner border border-nk-blue text-gray-50;
     }
 }

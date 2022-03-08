@@ -1,18 +1,17 @@
 .dark-theme{
     .contact-content{
-        @apply bg-gray-800 transition duration-700;
+        @apply bg-gray-800;
     }
     .design-card{
-        @apply bg-gray-800 text-white border border-gray-600 transition duration-700;
+        @apply bg-gray-800 text-white border border-gray-600;
     }
     .info-dark{
-        @apply text-white transition duration-700;
+        @apply text-white;
     }
     .icon-dark{
-        @apply bg-gray-400 border-none transition duration-700;
+        @apply bg-gray-400 border-none;
     }
     .bar-dark-mode{
-        @apply bg-transparent text-white transition duration-700;
+        @apply bg-transparent text-white;
     }
-
 }

@@ -1,12 +1,13 @@
 .dark-theme{
+    @apply transition duration-700;
     .recent-news{
-        @apply bg-gray-800 transition duration-700;
+        @apply bg-gray-800 ;
     }
     .icon-sun{
-        @apply opacity-100 transition duration-700;
+        @apply opacity-100 ;
     }
     .icon-moon{
-        @apply opacity-0 transition duration-500;
+        @apply opacity-0 ;
     }
     .recent-post:hover{
         @apply filter brightness-50;
@@ -21,7 +22,7 @@
         @apply text-white;
     }
     .page-link{
-        @apply text-white bg-nk-blue transition duration-700;
+        @apply text-white bg-nk-blue;
     }
     .page-link:hover{
         @apply bg-transparent text-white;
@@ -33,12 +34,12 @@
         @apply bg-gray-800 shadow-2xl border border-l-0 border-gray-500 transition duration-700;
     }
     .title-section-search{
-        @apply text-white transition duration-700;
+        @apply text-white ;
     }
     .container-fom-login{
-        @apply bg-gray-800 text-white border border-gray-600 transition duration-700;
+        @apply bg-gray-800 text-white border border-gray-600;
     }
     .container-title-categorie{
-        @apply filter brightness-75 transition duration-700;
+        @apply filter brightness-75;
     }
 }

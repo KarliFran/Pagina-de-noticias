@@ -89,7 +89,6 @@
     @apply w-full;
 }
 
-
 @media (min-width: 1024px){
     .more-news{
         @apply grid grid-cols-3 p-8 w-full;
