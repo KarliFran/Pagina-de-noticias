@@ -122,8 +122,6 @@
     border-top: 8px solid transparent;
 }
 }
-
-
 @keyframes menu-noticia{
     0%{
         transform: translate3d(0, 22px, 0);

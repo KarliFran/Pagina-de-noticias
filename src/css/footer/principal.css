@@ -1,7 +1,6 @@
 .footer{
     @apply bg-black text-white absolute w-full left-0;
 }
-
 .element-footer{
     @apply flex items-center flex-col border-b border-gray-400;
 }
