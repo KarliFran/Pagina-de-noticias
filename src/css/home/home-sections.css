@@ -8,7 +8,7 @@
     @apply filter brightness-125;
 }
 .more-news-item:first-child{
-@apply flex flex-col relative;
+    @apply flex flex-col relative;
 .more-picture{
     @apply absolute object-cover;
 }
