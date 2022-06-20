@@ -1,6 +1,7 @@
 .container-op-home{
     @apply flex flex-col;
 }
+
 .pic-opinion{
     @apply m-0;
 }
@@ -28,9 +29,7 @@
 .opinion-home{
     @apply flex flex-col gap-4 items-center;
 }
-.general{
-    @apply border-nk-blue;
-}
+
 
 @media (min-width: 1024px){
     .container-op-home{

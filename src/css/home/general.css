@@ -10,3 +10,33 @@ body{
 h1, h2, h3, p, a{
     @apply font-serif;
 }
+.general{
+    @apply border-nk-blue;
+}
+.latam{
+    @apply bg-nk-blue;
+}
+.latam{
+    @apply border-nk-blue;
+}
+.latam::before{
+    @apply border-nk-blue;
+}
+.sports{
+    @apply bg-nk-green;
+}
+.sports::before{
+    @apply border-nk-green;
+}
+.culture{
+    @apply bg-nk-yellow;
+}
+.culture::before{
+    @apply border-nk-yellow;
+}
+.tech{
+    @apply bg-nk-aqua;
+}
+.tech::before{
+    @apply border-nk-aqua;
+}

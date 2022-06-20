@@ -9,12 +9,6 @@
     content: "";
     border-right: 8px solid transparent;
 }
-.latam{
-    @apply bg-nk-blue;
-}
-.latam{
-    @apply border-nk-blue;
-}
 .letterhead-title{
     @apply m-0;
 }

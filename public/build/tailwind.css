@@ -377,26 +377,39 @@ Add the correct display in Chrome and Safari.
   --tw-ring-shadow: 0 0 #0000;
 }
 
-.bar-header{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  --tw-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
-}
-
 .logo-header{
   padding: 1rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.container-nav{
+  display: none;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* NAV MENU */
+
+.nav-header{
+  z-index: 20;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.nav-items{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .nav-item{
@@ -408,12 +421,44 @@ Add the correct display in Chrome and Safari.
   padding: 0.5rem;
 }
 
-.nav-header{
-  z-index: 20;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+.menu-item{
+  display: block;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
+
+.menu-item:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(129, 140, 248, var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+.menu-item:focus{
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.item-sub-menu{
+  display: block;
+  padding-left: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.menu-item-sub-menu{
+  display: none;
+}
+
+/*Burguer*/
 
 .navbar-burger{
   display: -webkit-box;
@@ -449,49 +494,25 @@ Add the correct display in Chrome and Safari.
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
-.container-nav{
-  display: none;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+/*Search*/
 
-.nav-items{
+.bar-header{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
-.menu-item{
-  display: block;
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
-  padding: 0.5rem;
-  padding-left: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
-}
-
-.menu-item:hover{
-  --tw-border-opacity: 1;
-  border-color: rgba(129, 140, 248, var(--tw-border-opacity));
-  background-color: transparent;
-}
-
-.menu-item:focus{
-  --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
-}
+/*Login*/
 
 .nav-login{
   border-right-width: 2px;
@@ -533,6 +554,8 @@ Add the correct display in Chrome and Safari.
   padding: 0.25rem;
 }
 
+/* Social Media*/
+
 .social-item-header{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,30 +569,7 @@ Add the correct display in Chrome and Safari.
   padding: 0.5rem;
 }
 
-.item-sub-menu{
-  display: block;
-  padding-left: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
-}
-
-.menu-item-sub-menu{
-  display: none;
-}
-
 @media (min-width: 1024px) {
-  .bar-header{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 1rem;
-    padding: 0px;
-  }
-
   .menu-nav{
     display: none;
   }
@@ -702,6 +702,16 @@ Add the correct display in Chrome and Safari.
     content: "";
     border-top: 8px solid transparent;
   }
+
+  .bar-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 1rem;
+    padding: 0px;
+  }
 }
 
 @-webkit-keyframes menu-noticia{
@@ -756,16 +766,6 @@ Add the correct display in Chrome and Safari.
   border-top-width: 8px;
   content: "";
   border-right: 8px solid transparent;
-}
-
-.latam{
-  --tw-bg-opacity: 1;
-  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
-}
-
-.latam{
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 .letterhead-title{
@@ -1011,8 +1011,30 @@ Add the correct display in Chrome and Safari.
   gap: 1rem;
 }
 
-.input-susbcribe{
+.container-input{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mail-img{
+  position: absolute;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.input-susbcribe{
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgba(61, 178, 255, var(--tw-border-opacity));
@@ -1022,11 +1044,6 @@ Add the correct display in Chrome and Safari.
 .input-susbcribe:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.mail-img{
-  position: absolute;
-  right: 31%;
 }
 
 .btn-subscribe{
@@ -1117,10 +1134,6 @@ Add the correct display in Chrome and Safari.
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-
-  .input-susbcribe{
-    width: 50%;
-  }
 }
 
 a{
@@ -1150,6 +1163,56 @@ body{
 
 h1, h2, h3, p, a{
   font-family: Times New Roman;
+}
+
+.general{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+}
+
+.latam{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+}
+
+.latam{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+}
+
+.latam::before{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+}
+
+.sports{
+  --tw-bg-opacity: 1;
+  background-color: rgba(97, 177, 90, var(--tw-bg-opacity));
+}
+
+.sports::before{
+  --tw-border-opacity: 1;
+  border-color: rgba(97, 177, 90, var(--tw-border-opacity));
+}
+
+.culture{
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 165, 0, var(--tw-bg-opacity));
+}
+
+.culture::before{
+  --tw-border-opacity: 1;
+  border-color: rgba(240, 165, 0, var(--tw-border-opacity));
+}
+
+.tech{
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 107, 131, var(--tw-bg-opacity));
+}
+
+.tech::before{
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 107, 131, var(--tw-border-opacity));
 }
 
 .container-videos{
@@ -1443,41 +1506,6 @@ h2{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.latam::before{
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
-}
-
-.sports{
-  --tw-bg-opacity: 1;
-  background-color: rgba(97, 177, 90, var(--tw-bg-opacity));
-}
-
-.sports::before{
-  --tw-border-opacity: 1;
-  border-color: rgba(97, 177, 90, var(--tw-border-opacity));
-}
-
-.culture{
-  --tw-bg-opacity: 1;
-  background-color: rgba(240, 165, 0, var(--tw-bg-opacity));
-}
-
-.culture::before{
-  --tw-border-opacity: 1;
-  border-color: rgba(240, 165, 0, var(--tw-border-opacity));
-}
-
-.tech{
-  --tw-bg-opacity: 1;
-  background-color: rgba(49, 107, 131, var(--tw-bg-opacity));
-}
-
-.tech::before{
-  --tw-border-opacity: 1;
-  border-color: rgba(49, 107, 131, var(--tw-border-opacity));
 }
 
 .info-posts{
@@ -1853,6 +1881,12 @@ h2{
   scrollbar-width:none;
 }
 
+.latam-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .latam-item{
   position: relative;
   display: -webkit-box;
@@ -1900,12 +1934,6 @@ h2{
   --tw-brightness: brightness(.75);
 }
 
-.latam-title{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .data-latam{
   padding-left: 0.25rem;
   font-size: 0.75rem;
@@ -1922,6 +1950,10 @@ h2{
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.second-info{
+  display: block;
+}
+
 .section-poster{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1932,10 +1964,6 @@ h2{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.second-info{
-  display: block;
 }
 
 @media (min-width: 1024px){
@@ -2061,11 +2089,6 @@ h2{
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-}
-
-.general{
-  --tw-border-opacity: 1;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 @media (min-width: 1024px){
@@ -2603,8 +2626,8 @@ h2{
 }
 
 .bar-search-404:focus{
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(61, 178, 255, var(--tw-border-opacity)) !important;
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
 .btn-home-container{

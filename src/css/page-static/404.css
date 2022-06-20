@@ -14,10 +14,10 @@
     @apply bg-blue-500 ;
 }
 .bar-search-404:focus{
-    @apply border-nk-blue !important;
+    @apply border-nk-blue;
 }
 .btn-home-container{
-@apply p-8 transition duration-700 ease-in-out transform;
+    @apply p-8 transition duration-700 ease-in-out transform;
 }
 .btn-home-container:hover{
     @apply font-bold shadow-inner -translate-x-0 scale-105;

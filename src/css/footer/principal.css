@@ -31,14 +31,17 @@
 .suscribe{
     @apply flex justify-center items-center w-full h-20 gap-4;
 }
+.container-input{
+    @apply relative w-6/12 flex items-center justify-end;
+}
+.mail-img{
+    @apply absolute z-10 p-4;
+}
 .input-susbcribe{
-    @apply w-2/4 p-2 border-2 border-nk-blue;
+    @apply relative w-full p-2 border-2 rounded border-nk-blue;
 }
 .input-susbcribe:focus{
     @apply outline-none;
-}
-.mail-img{
-    @apply absolute right-1/6;
 }
 .btn-subscribe{
     @apply cursor-pointer p-1 pl-5 pr-5 bg-transparent border-2 border-nk-blue text-nk-blue text-lg rounded-lg transition-colors duration-700 transform;
@@ -61,8 +64,5 @@
     }
     .suscribe-general{
         @apply flex flex-col justify-center items-center relative w-full py-4;
-    }
-    .input-susbcribe{
-        @apply w-3/6;
     }
 }
