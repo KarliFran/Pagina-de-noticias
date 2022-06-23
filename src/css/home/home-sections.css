@@ -2,7 +2,7 @@
     @apply p-4;
 }
 .more-news{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 pb-4;
 }
 .more-news-item:hover{
     @apply filter brightness-125;
@@ -19,23 +19,20 @@
     @apply m-0 relative pl-2 bottom-2 text-white overflow-ellipsis overflow-hidden w-full;
 }
 .more-img{
-    @apply h-40;
+    @apply w-full h-40 p-0 border-0;
 }
+}
+.more-img{
+    @apply max-w-sm min-w-md h-24 m-0 p-1 border-2 border-gray-500 rounded;
 }
 .section-tech{
     @apply flex flex-col gap-2 pt-14;
 }
-.more-news{
-    @apply pb-4;
-}
 .more-news-item{
     @apply flex gap-2 transition duration-500 ease-in-out transform;
 }
-.more-img{
-    @apply m-0 w-96 h-16;
-}
 .more-picture{
-    @apply w-full h-full;
+    @apply w-full h-full rounded;
 }
 .more-news-item{
     @apply flex;
@@ -47,7 +44,7 @@
     @apply border-b-2 w-96;
 }
 .more-title{
-    @apply truncate w-72 m-0;
+    @apply m-0;
 }
 .tech-title{
     @apply border-nk-aqua;
@@ -59,7 +56,7 @@
     @apply border-nk-green;
 }
 .container-data{
-    @apply flex flex-col gap-2 p-2 w-48;
+    @apply flex flex-col gap-2 p-2;
 }
 .section-news{
     @apply w-max border;
@@ -82,30 +79,18 @@
 .culture-more{
     @apply border-nk-yellow;
 }
-.more-data{
-    @apply w-full;
-}
 .more-title{
-    @apply w-full;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 @media (min-width: 1024px){
     .more-news{
-        @apply grid grid-cols-3 p-8 w-full;
-    }
-    .section-tech{
-        @apply w-11/12;
+        @apply grid grid-cols-3 w-full;
     }
     .title-more-news{
         @apply w-29;
-    }
-    .more-img{
-        @apply h-24;
-    }
-    .container-data{
-        @apply w-64;
-    }
-    .more-img{
-        @apply w-full;
     }
 }

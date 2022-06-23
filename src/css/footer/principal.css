@@ -29,7 +29,7 @@
     @apply p-4 text-3xl text-center m-0;
 }
 .suscribe{
-    @apply flex justify-center items-center w-full h-20 gap-4;
+    @apply flex justify-center items-center w-full h-20 gap-4 p-2;
 }
 .container-input{
     @apply relative w-6/12 flex items-center justify-end;

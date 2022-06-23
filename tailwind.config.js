@@ -24,7 +24,8 @@ module.exports = {
         'nk-cintillo': 'rgba(0,0,0,0.6)',
       },
       gridTemplateColumns:{
-        'auto-fill': 'repeat(auto-fill, minmax(20rem,1fr))'
+        'auto-fill': 'repeat(auto-fill, minmax(20rem,1fr))',
+        'auto-fit': 'repeat(auto-fit, minmax(300px, 1fr))',
       },
       gridRow:{
         'row-edit': '1 / span 2',
@@ -36,6 +37,7 @@ module.exports = {
       minWidth:{
         '300': '300px',
         '200': '200px',
+        'md': '185px',
       },
       width:{
         '29': '29rem',

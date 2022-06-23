@@ -14,7 +14,7 @@ if(list){
 
 let iframe = document.querySelector('.videos-destacado iframe');
 
-client.videos.search({ query, per_page: 3 })
+client.videos.search({ query, per_page: 6 })
 .then(videos => {
     videos.videos.map(video => {
         //console.log(video);

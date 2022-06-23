@@ -49,7 +49,7 @@
             @apply h-full;
         }
     }
-    .featured-item:nth-child(2){
+    .featured-item:last-child{
         @apply col-span-2;
     }
     .featured-item{

@@ -18,7 +18,7 @@
     @apply text-justify;
 }
 .container-btn-op{
-    @apply flex justify-end p-1;
+    @apply flex justify-end p-2;
 }
 .btn-op-more{
     @apply p-3 rounded-md bg-nk-blue text-white shadow-inner transition duration-700 ease-in-out transform;

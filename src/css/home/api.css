@@ -7,14 +7,12 @@
 .container-api{
     @apply flex flex-col justify-around w-full;
 }
-.videos-destacado{
-    @apply w-full h-64;
-}
-.videos-destacado{
-    @apply w-full h-64;
-}
+
 iframe{
-    @apply relative w-full h-full;
+    @apply relative;
+}
+.videos-destacado{
+    @apply flex;
 }
 .videos-destacado > p{
     @apply relative bottom-24 text-white text-base hidden;
@@ -57,7 +55,7 @@ h2{
     @apply flex items-center;
 }
 .container-api{
-    @apply flex flex-row w-9/12;
+    @apply flex flex-row;
 }
 }
 @media (min-width: 1024px){
@@ -65,19 +63,17 @@ h2{
         @apply p-8;
     }
     .container-api{
-        @apply flex gap-8 p-4;
+        @apply flex p-4 justify-center gap-1;
     }
     .wrapper-video{
-        @apply flex flex-col overflow-y-scroll overflow-x-hidden h-96;
-    }
-    .videos-destacado{
-        @apply h-96 ;
+        @apply flex flex-col gap-5 overflow-y-scroll overflow-x-hidden h-96;
+        scrollbar-width: none;
     }
     .videos-number{
-        @apply h-48;
+        @apply h-36;
     }
     .video-img{
-        @apply h-44 w-96;
+        @apply h-40 w-80;
     }
     .videos-list{
         @apply flex;

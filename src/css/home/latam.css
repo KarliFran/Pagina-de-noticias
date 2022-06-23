@@ -29,7 +29,7 @@
 
 @media (min-width: 1024px){
     .container-latam{
-        @apply grid grid-cols-4 gap-4 w-4/5 p-4 overflow-x-hidden;
+        @apply grid grid-cols-auto-fit gap-4 p-4 w-full max-w-screen-2xl overflow-x-hidden;
     }
     .latam-item:first-child{
         @apply row-row-edit h-full;

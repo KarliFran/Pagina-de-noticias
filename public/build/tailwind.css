@@ -1009,6 +1009,7 @@ Add the correct display in Chrome and Safari.
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+  padding: 0.5rem;
 }
 
 .container-input{
@@ -1251,20 +1252,14 @@ h1, h2, h3, p, a{
       justify-content: space-around;
 }
 
-.videos-destacado{
-  height: 16rem;
-  width: 100%;
-}
-
-.videos-destacado{
-  height: 16rem;
-  width: 100%;
-}
-
 iframe{
   position: relative;
-  height: 100%;
-  width: 100%;
+}
+
+.videos-destacado{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .videos-destacado > p{
@@ -1369,7 +1364,6 @@ h2{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 75%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1386,7 +1380,10 @@ h2{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.25rem;
     padding: 1rem;
   }
 
@@ -1399,21 +1396,19 @@ h2{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 1.25rem;
     overflow-x: hidden;
     overflow-y: scroll;
-  }
-
-  .videos-destacado{
-    height: 24rem;
+    scrollbar-width: none;
   }
 
   .videos-number{
-    height: 12rem;
+    height: 9rem;
   }
 
   .video-img{
-    height: 11rem;
-    width: 24rem;
+    height: 10rem;
+    width: 20rem;
   }
 
   .videos-list{
@@ -1562,7 +1557,7 @@ h2{
       height: 100%;
     }
 
-  .featured-item:nth-child(2){
+  .featured-item:last-child{
     grid-column: span 2 / span 2;
   }
 
@@ -1584,6 +1579,7 @@ h2{
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .more-news-item:hover{
@@ -1640,7 +1636,22 @@ h2{
 
 .more-news-item:first-child .more-img{
     height: 10rem;
+    width: 100%;
+    border-width: 0px;
+    padding: 0px;
   }
+
+.more-img{
+  margin: 0px;
+  height: 6rem;
+  min-width: 185px;
+  max-width: 24rem;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+  padding: 0.25rem;
+}
 
 .section-tech{
   display: -webkit-box;
@@ -1652,10 +1663,6 @@ h2{
           flex-direction: column;
   gap: 0.5rem;
   padding-top: 3.5rem;
-}
-
-.more-news{
-  padding-bottom: 1rem;
 }
 
 .more-news-item{
@@ -1685,15 +1692,10 @@ h2{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.more-img{
-  margin: 0px;
-  height: 4rem;
-  width: 24rem;
-}
-
 .more-picture{
   height: 100%;
   width: 100%;
+  border-radius: 0.25rem;
 }
 
 .more-news-item{
@@ -1713,10 +1715,6 @@ h2{
 
 .more-title{
   margin: 0px;
-  width: 18rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .tech-title{
@@ -1738,7 +1736,6 @@ h2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 12rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1820,12 +1817,11 @@ h2{
   border-color: rgba(240, 165, 0, var(--tw-border-opacity));
 }
 
-.more-data{
-  width: 100%;
-}
-
 .more-title{
-  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px){
@@ -1833,27 +1829,10 @@ h2{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    padding: 2rem;
-  }
-
-  .section-tech{
-    width: 91.666667%;
   }
 
   .title-more-news{
     width: 29rem;
-  }
-
-  .more-img{
-    height: 6rem;
-  }
-
-  .container-data{
-    width: 16rem;
-  }
-
-  .more-img{
-    width: 100%;
   }
 }
 
@@ -1969,8 +1948,9 @@ h2{
 @media (min-width: 1024px){
   .container-latam{
     display: grid;
-    width: 80%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    max-width: 1536px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     overflow-x: hidden;
     padding: 1rem;
@@ -2036,7 +2016,7 @@ h2{
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 .btn-op-more{
@@ -2167,6 +2147,9 @@ h2{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -2178,8 +2161,9 @@ h2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 24rem;
   width: 100%;
+  min-width: 300px;
+  max-width: 28rem;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -2249,16 +2233,12 @@ h2{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 83.333333%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     --tw-shadow: 0 0 #0000;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -2287,11 +2267,7 @@ h2{
   }
 
   .recent-post{
-    width: 22rem;
-  }
-
-  .container-title{
-    width: 80%;
+    width: 18rem;
   }
 }
 
@@ -3979,10 +3955,21 @@ input:active{
   }
 }
 
+.container-btn-darkmode{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container-darkmode{
   position: absolute;
-  top: 2.75rem;
-  right: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4077,12 +4064,6 @@ input:active{
   width: 1rem;
 }
 
-@media (min-width: 1024px){
-  .container-darkmode{
-    right: 3rem;
-  }
-}
-
 .header-search{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4118,8 +4099,8 @@ input:active{
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 .bar-search{

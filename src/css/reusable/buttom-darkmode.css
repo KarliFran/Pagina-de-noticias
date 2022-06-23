@@ -1,5 +1,8 @@
+.container-btn-darkmode{
+@apply relative flex justify-center items-center;
+}
 .container-darkmode{
-@apply flex items-center absolute right-24 top-11;
+@apply flex items-center absolute ;
 }
 .buttom-darkmode{
     @apply flex items-center justify-between relative w-10 h-5 transform scale-150 bg-nk-blue transition-all duration-200 ease-in-out  rounded-full shadow-inner outline-none appearance-none;
@@ -27,9 +30,4 @@
 }
 .icon-moon{
     @apply absolute w-4 right-0;
-}
-@media (min-width: 1024px){
-    .container-darkmode{
-        @apply right-12;
-    }
 }
