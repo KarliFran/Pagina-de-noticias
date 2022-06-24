@@ -9,7 +9,7 @@
     @apply w-full h-full;
 }
 .item-opinion-home{
-    @apply bg-white rounded-lg shadow-inner overflow-hidden mb-10;
+    @apply bg-white rounded-lg shadow-inner overflow-hidden mb-10 max-w-md;
 }
 .info-op-home{
     @apply p-3;

@@ -16,7 +16,7 @@
     @apply relative text-white text-base;
 }
 .more-title{
-    @apply m-0 relative pl-2 bottom-2 text-white overflow-ellipsis overflow-hidden w-full;
+    @apply m-0 relative pl-2 text-white overflow-ellipsis overflow-hidden w-full;
 }
 .more-img{
     @apply w-full h-40 p-0 border-0;

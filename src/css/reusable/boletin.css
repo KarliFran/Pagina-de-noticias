@@ -1,5 +1,5 @@
 .container-boletin{
-    @apply flex flex-col items-center w-95 border border-nk-blue rounded-md shadow-md;
+    @apply flex flex-col items-center w-95 max-w-xs border border-nk-blue rounded-md shadow-md;
 }
 .subscribe-enter{
     @apply text-center;

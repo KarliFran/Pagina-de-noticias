@@ -2,7 +2,7 @@
     @apply p-1;
 }
 .container-news-featured{
-    @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4 p-4;
+    @apply flex overflow-x-scroll overflow-y-hidden gap-2 pb-4 p-4 max-w-5xl ;
     scrollbar-width: none;
 }
 .container-picture{

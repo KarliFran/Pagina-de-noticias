@@ -5,14 +5,14 @@
     @apply flex;
 }
 .container-api{
-    @apply flex flex-col justify-around w-full;
+    @apply flex flex-col w-full;
 }
 
 iframe{
     @apply relative;
 }
 .videos-destacado{
-    @apply flex;
+    @apply flex justify-center;
 }
 .videos-destacado > p{
     @apply relative bottom-24 text-white text-base hidden;
