@@ -2,7 +2,7 @@
     @apply p-4;
 }
 .more-news{
-    @apply flex flex-col gap-4 pb-4;
+    @apply flex flex-col relative gap-4 pb-4;
 }
 .more-news-item:hover{
     @apply filter brightness-125;
@@ -37,11 +37,9 @@
 .more-news-item{
     @apply flex;
 }
+
 .title-more-news{
-    @apply absolute;
-}
-.title-more-news{
-    @apply border-b-2 w-96;
+    @apply absolute border-b-2 w-full;
 }
 .more-title{
     @apply m-0;
@@ -89,8 +87,5 @@
 @media (min-width: 1024px){
     .more-news{
         @apply grid grid-cols-3 w-full;
-    }
-    .title-more-news{
-        @apply w-29;
     }
 }

@@ -13,7 +13,7 @@
     @apply m-0;
 }
 .top-news{
-    @apply flex relative left-40 items-center w-60;
+    @apply flex relative items-center w-full pl-36;
 }
 .letterhead-description{
     @apply flex items-center pl-2;

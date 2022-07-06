@@ -38,6 +38,7 @@ module.exports = {
         '300': '300px',
         '200': '200px',
         'md': '185px',
+        'lg': '500px',
       },
       width:{
         '29': '29rem',

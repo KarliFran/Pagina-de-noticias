@@ -556,6 +556,17 @@ Add the correct display in Chrome and Safari.
 
 /* Social Media*/
 
+.social-items{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 0.25rem;
+}
+
 .social-item-header{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,6 +723,64 @@ Add the correct display in Chrome and Safari.
     gap: 1rem;
     padding: 0px;
   }
+
+  .menu-social-media{
+    position: relative;
+  }
+    .menu-social-media:hover .social-items{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+  .social-items{
+    position: absolute;
+    top: 2.25rem;
+    margin: 0px;
+    display: none;
+    border-radius: 0.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+    padding: 1rem;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    -webkit-animation: menu-noticia 0.5s forwards 1;
+            animation: menu-noticia 0.5s forwards 1;
+    -webkit-animation-delay: 0.4;
+            animation-delay: 0.4;
+  }
+
+  .social-items::after{
+    position: absolute;
+    left: 0.75rem;
+    height: 0px;
+    width: 0px;
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+    top: -8px;
+    content: "";
+    border-top: 8px solid transparent;
+    border-right-width: 16px;
+    right: 7px;
+  }
+
+  .social-items::before{
+    position: absolute;
+    left: 1.75rem;
+    height: 0px;
+    width: 0px;
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+    top: -8px;
+    border-left-width: 16px;
+    content: "";
+    border-top: 8px solid transparent;
+  }
 }
 
 @-webkit-keyframes menu-noticia{
@@ -774,14 +843,14 @@ Add the correct display in Chrome and Safari.
 
 .top-news{
   position: relative;
-  left: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 15rem;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 9rem;
 }
 
 .letterhead-description{
@@ -879,6 +948,17 @@ Add the correct display in Chrome and Safari.
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.footer .social-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+    padding: 0.25rem;
+  }
+
 .element-footer{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,17 +990,6 @@ Add the correct display in Chrome and Safari.
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.5rem;
-}
-
-.social-items{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  padding: 0.25rem;
 }
 
 .social-item{
@@ -1573,6 +1642,7 @@ h2{
 }
 
 .more-news{
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1707,10 +1777,7 @@ h2{
 
 .title-more-news{
   position: absolute;
-}
-
-.title-more-news{
-  width: 24rem;
+  width: 100%;
   border-bottom-width: 2px;
 }
 
@@ -1830,10 +1897,6 @@ h2{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .title-more-news{
-    width: 29rem;
   }
 }
 
@@ -2139,17 +2202,15 @@ h2{
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 1rem;
+  overflow: scroll;
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  scrollbar-width:none;
 }
 
 .recent-post{
@@ -2235,6 +2296,9 @@ h2{
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     --tw-shadow: 0 0 #0000;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -3339,6 +3403,8 @@ input:active{
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  min-width: 500px;
+  max-width: 20rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
