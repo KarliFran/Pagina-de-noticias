@@ -92,12 +92,12 @@ input:active{
 .form-field__input:hover{
     @apply border-nk-blue;
 }
-@media (min-width:1200px){
+@media (min-width:1024px){
     .picture-contact{
         @apply -ml-24 w-52;
     }
     .form-info{
-        @apply flex flex-row;
+        @apply flex flex-row p-2 pt-8;
     }
     .container-info{
         @apply w-4/8;

@@ -9,7 +9,7 @@
     @apply w-full h-full;
 }
 .item-opinion-home{
-    @apply bg-white rounded-lg shadow-inner overflow-hidden mb-10 max-w-md;
+    @apply bg-white rounded-lg shadow-lg overflow-hidden mb-10 max-w-sm;
 }
 .info-op-home{
     @apply p-3;
@@ -30,13 +30,9 @@
     @apply flex flex-col gap-4 items-center;
 }
 
-
 @media (min-width: 1024px){
     .container-op-home{
         @apply flex flex-row w-full gap-8 justify-center;
-    }
-    .item-opinion-home{
-        @apply w-3/12;
     }
     .pic-opinion{
         @apply h-64;

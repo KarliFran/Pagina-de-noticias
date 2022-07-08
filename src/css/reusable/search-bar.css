@@ -1,11 +1,11 @@
 .header-search{
-    @apply flex items-center h-8 transition duration-500;
+    @apply flex justify-center items-center h-8 transition duration-500 my-3;
 }
 .container-search{
-    @apply absolute flex rounded-2xl p-4 transition duration-500;
+    @apply relative flex rounded-2xl p-4 justify-end items-center transition duration-700;
 }
 .bar-search{
-    @apply w-80 rounded-2xl p-2 absolute border border-nk-blue text-gray-900 transition duration-300;
+    @apply w-80 rounded-2xl p-2 relative border border-nk-blue text-gray-900 transition duration-700;
     &:focus{
         @apply outline-none;
     }
@@ -14,32 +14,30 @@ h1{
     @apply font-serif;
 }
 .btn-search{
-    @apply flex items-center justify-center text-gray-900 rounded-full bg-transparent relative left-22 z-10 p-0 top-1 cursor-pointer transition duration-500;
+    @apply absolute flex items-center justify-center text-gray-900 rounded-full bg-transparent z-10  cursor-pointer transition duration-500;
 }
 .icon-search{
     @apply w-6;
 }
 @media (min-width: 1024px) {
     .container-search{
-        @apply flex items-center bg-transparent rounded-full mr-2 static border-0;
+        @apply flex justify-center items-center bg-transparent rounded-full mr-2 border-0;
     }
     .bar-search{
-        @apply text-gray-900 rounded-full w-0 p-0 bg-transparent static border-0;
-        &:focus{
-            @apply outline-none w-40 px-4 py-1 bg-white border-0;
-        }
+        @apply text-gray-900 rounded-full w-0 p-0 bg-transparent border-0;
     }
+
     .btn-search{
-        @apply static text-white;
+        @apply text-white;
     }
 
     .container-search:hover{
-        @apply bg-white p-1 border-0;
+        @apply flex justify-end p-2 border-0;
         .bar-search{
-                @apply px-4 py-1 w-40 bg-white border-0;
+                @apply p-2 w-40 bg-white border-0;
         }
         .btn-search{
-            @apply text-black bg-white;
+            @apply text-black;
         }
     }
 }

@@ -464,6 +464,7 @@ Add the correct display in Chrome and Safari.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -536,7 +537,6 @@ Add the correct display in Chrome and Safari.
 .nav-login{
   position: relative;
   left: 31%;
-  margin: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,6 +580,10 @@ Add the correct display in Chrome and Safari.
   padding: 0.5rem;
 }
 
+.social-media-name{
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .menu-nav{
     display: none;
@@ -590,6 +594,7 @@ Add the correct display in Chrome and Safari.
     display: -ms-flexbox;
     display: flex;
     width: auto;
+    gap: 0.5rem;
   }
 
   .nav-items{
@@ -727,60 +732,66 @@ Add the correct display in Chrome and Safari.
   .menu-social-media{
     position: relative;
   }
-    .menu-social-media:hover .social-items{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+
+  .social-media-name{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+      header .menu-social-media:hover .social-items{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+    header .social-items{
+      position: absolute;
+      top: 2.25rem;
+      margin: 0px;
+      display: none;
+      border-radius: 0.25rem;
+      --tw-bg-opacity: 1;
+      background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
+      padding: 1rem;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      -webkit-animation: menu-noticia 0.5s forwards 1;
+              animation: menu-noticia 0.5s forwards 1;
+      -webkit-animation-delay: 0.4;
+              animation-delay: 0.4;
     }
-
-  .social-items{
-    position: absolute;
-    top: 2.25rem;
-    margin: 0px;
-    display: none;
-    border-radius: 0.25rem;
-    --tw-bg-opacity: 1;
-    background-color: rgba(61, 178, 255, var(--tw-bg-opacity));
-    padding: 1rem;
-    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    -webkit-animation: menu-noticia 0.5s forwards 1;
-            animation: menu-noticia 0.5s forwards 1;
-    -webkit-animation-delay: 0.4;
-            animation-delay: 0.4;
-  }
-
-  .social-items::after{
-    position: absolute;
-    left: 0.75rem;
-    height: 0px;
-    width: 0px;
-    --tw-border-opacity: 1;
-    border-color: rgba(61, 178, 255, var(--tw-border-opacity));
-    top: -8px;
-    content: "";
-    border-top: 8px solid transparent;
-    border-right-width: 16px;
-    right: 7px;
-  }
-
-  .social-items::before{
-    position: absolute;
-    left: 1.75rem;
-    height: 0px;
-    width: 0px;
-    --tw-border-opacity: 1;
-    border-color: rgba(61, 178, 255, var(--tw-border-opacity));
-    top: -8px;
-    border-left-width: 16px;
-    content: "";
-    border-top: 8px solid transparent;
-  }
+    header .social-items::after{
+      position: absolute;
+      left: 0.75rem;
+      height: 0px;
+      width: 0px;
+      --tw-border-opacity: 1;
+      border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+      top: -8px;
+      content: "";
+      border-top: 8px solid transparent;
+      border-right-width: 16px;
+      right: 7px;
+    }
+    header .social-items::before{
+      position: absolute;
+      left: 1.75rem;
+      height: 0px;
+      width: 0px;
+      --tw-border-opacity: 1;
+      border-color: rgba(61, 178, 255, var(--tw-border-opacity));
+      top: -8px;
+      border-left-width: 16px;
+      content: "";
+      border-top: 8px solid transparent;
+    }
 }
 
 @-webkit-keyframes menu-noticia{
@@ -1109,6 +1120,7 @@ Add the correct display in Chrome and Safari.
   --tw-border-opacity: 1;
   border-color: rgba(61, 178, 255, var(--tw-border-opacity));
   padding: 0.5rem;
+  padding-right: 3rem;
 }
 
 .input-susbcribe:focus{
@@ -1132,9 +1144,7 @@ Add the correct display in Chrome and Safari.
   --tw-border-opacity: 1;
   border-color: rgba(61, 178, 255, var(--tw-border-opacity));
   background-color: transparent;
-  padding: 0.25rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  padding: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -1204,6 +1214,10 @@ Add the correct display in Chrome and Safari.
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+}
+
+*{
+  scrollbar-width: none;
 }
 
 a{
@@ -1512,7 +1526,7 @@ h2{
 }
 
 .featured-picture{
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -1715,7 +1729,7 @@ h2{
 .more-img{
   margin: 0px;
   height: 6rem;
-  min-width: 185px;
+  min-width: 163px;
   max-width: 24rem;
   border-radius: 0.25rem;
   border-width: 2px;
@@ -1777,8 +1791,6 @@ h2{
 
 .title-more-news{
   position: absolute;
-  width: 100%;
-  border-bottom-width: 2px;
 }
 
 .more-title{
@@ -2050,12 +2062,12 @@ h2{
 
 .item-opinion-home{
   margin-bottom: 2.5rem;
-  max-width: 28rem;
+  max-width: 24rem;
   overflow: hidden;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -2144,10 +2156,6 @@ h2{
         -ms-flex-pack: center;
             justify-content: center;
     gap: 2rem;
-  }
-
-  .item-opinion-home{
-    width: 25%;
   }
 
   .pic-opinion{
@@ -3328,7 +3336,7 @@ input:active{
   border-color: rgba(61, 178, 255, var(--tw-border-opacity));
 }
 
-@media (min-width:1200px){
+@media (min-width:1024px){
   .picture-contact{
     margin-left: -6rem;
     width: 13rem;
@@ -3342,6 +3350,8 @@ input:active{
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 0.5rem;
+    padding-top: 2rem;
   }
 
   .container-info{
@@ -3982,7 +3992,7 @@ input:active{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 23rem;
+  width: 18rem;
   max-width: 20rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -4001,7 +4011,12 @@ input:active{
 }
 
 .subscribe-enter{
+  padding: 0.25rem;
   text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
 }
 
 .mail-img-form{
@@ -4128,6 +4143,8 @@ input:active{
 }
 
 .header-search{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4135,6 +4152,9 @@ input:active{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -4148,10 +4168,16 @@ input:active{
 }
 
 .container-search{
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-radius: 1rem;
   padding: 1rem;
   -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
@@ -4162,12 +4188,12 @@ input:active{
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
 }
 
 .bar-search{
-  position: absolute;
+  position: relative;
   width: 20rem;
   border-radius: 1rem;
   border-width: 1px;
@@ -4184,8 +4210,8 @@ input:active{
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
 }
 
 .bar-search:focus{
@@ -4198,9 +4224,7 @@ h1{
 }
 
 .btn-search{
-  position: relative;
-  top: 0.25rem;
-  left: 22rem;
+  position: absolute;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4214,7 +4238,6 @@ h1{
           justify-content: center;
   border-radius: 9999px;
   background-color: transparent;
-  padding: 0px;
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
   -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
@@ -4235,7 +4258,6 @@ h1{
 
 @media (min-width: 1024px) {
   .container-search{
-    position: static;
     margin-right: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4243,13 +4265,15 @@ h1{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 9999px;
     border-width: 0px;
     background-color: transparent;
   }
 
   .bar-search{
-    position: static;
     width: 0px;
     border-radius: 9999px;
     border-width: 0px;
@@ -4258,44 +4282,30 @@ h1{
     --tw-text-opacity: 1;
     color: rgba(17, 24, 39, var(--tw-text-opacity));
   }
-    .bar-search:focus{
-      width: 10rem;
-      border-width: 0px;
-      --tw-bg-opacity: 1;
-      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
 
   .btn-search{
-    position: static;
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
   .container-search:hover{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     border-width: 0px;
-    --tw-bg-opacity: 1;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-    padding: 0.25rem;
+    padding: 0.5rem;
   }
     .container-search:hover .bar-search{
       width: 10rem;
       border-width: 0px;
       --tw-bg-opacity: 1;
       background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
+      padding: 0.5rem;
     }
     .container-search:hover .btn-search{
-      --tw-bg-opacity: 1;
-      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
       --tw-text-opacity: 1;
       color: rgba(0, 0, 0, var(--tw-text-opacity));
     }

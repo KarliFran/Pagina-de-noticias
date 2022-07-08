@@ -23,7 +23,7 @@
 }
 }
 .more-img{
-    @apply max-w-sm min-w-md h-24 m-0 p-1 border-2 border-gray-500 rounded;
+    @apply max-w-sm min-w-1md h-24 m-0 p-1 border-2 border-gray-500 rounded;
 }
 .section-tech{
     @apply flex flex-col gap-2 pt-14;
@@ -39,7 +39,7 @@
 }
 
 .title-more-news{
-    @apply absolute border-b-2 w-full;
+    @apply absolute;
 }
 .more-title{
     @apply m-0;
