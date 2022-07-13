@@ -17,10 +17,7 @@ h1, h2, h3, p, a{
     @apply border-nk-blue;
 }
 .latam{
-    @apply bg-nk-blue;
-}
-.latam{
-    @apply border-nk-blue;
+    @apply bg-nk-blue border-nk-blue;
 }
 .latam::before{
     @apply border-nk-blue;
@@ -42,4 +39,13 @@ h1, h2, h3, p, a{
 }
 .tech::before{
     @apply border-nk-aqua;
+}
+.more-tech{
+    @apply border-nk-aqua;
+}
+.more-culture{
+    @apply border-nk-yellow;
+}
+.more-sports{
+    @apply border-nk-green;
 }
