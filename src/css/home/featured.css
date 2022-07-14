@@ -9,7 +9,7 @@
     @apply w-full h-56 m-0;
 }
 .featured-picture{
-    @apply w-full h-full absolute object-cover;
+    @apply w-full h-full object-cover;
 }
 .featured-categorie{
     @apply font-bold;

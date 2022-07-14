@@ -1,5 +1,5 @@
 .container-more-news{
-    @apply p-4;
+    @apply flex flex-col items-center p-4;
 }
 .more-news{
     @apply flex flex-col relative gap-4 pb-4;
@@ -26,7 +26,7 @@
     @apply max-w-sm min-w-1md h-24 m-0 p-1 border-2 border-gray-500 rounded;
 }
 .section-tech{
-    @apply flex flex-col gap-2 pt-14 pb-4 px-4 border rounded;
+    @apply flex flex-col gap-2 max-w-lg pt-14 pb-4 px-4 border rounded;
 }
 .more-news-item{
     @apply flex gap-2 transition duration-500 ease-in-out transform;
@@ -37,7 +37,6 @@
 .more-news-item{
     @apply flex;
 }
-
 .title-more-news{
     @apply absolute;
 }
