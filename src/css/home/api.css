@@ -9,7 +9,7 @@
 }
 
 iframe{
-    @apply relative;
+    @apply relative min-w-full;
 }
 .videos-destacado{
     @apply flex justify-center;

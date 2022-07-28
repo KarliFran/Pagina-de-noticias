@@ -34,12 +34,16 @@ module.exports = {
       gridAutoRows:{
         'edit': '14rem',
       },
+      maxWidth:{
+        '1/4': '60%',
+      },
       minWidth:{
         '300': '300px',
         '200': '200px',
         '1md': '163px',
         'md': '185px',
         'lg': '500px',
+        'sm' : '10px',
       },
       width:{
         '29': '29rem',

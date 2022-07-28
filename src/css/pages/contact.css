@@ -33,7 +33,7 @@
     @apply shadow-xl rounded-lg h-auto align-middle border-none absolute -m-16 -ml-20 bg-gray-900;
 }
 .container-form{
-@apply flex flex-col items-center;
+@apply flex flex-col items-center pt-8;
 }
 .form-info{
     @apply flex flex-col;

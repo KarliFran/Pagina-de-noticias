@@ -62,7 +62,7 @@
 }
 /* Social Media*/
 .social-items{
-    @apply flex justify-center gap-4 p-1;
+    @apply flex justify-center flex-wrap gap-4 p-1;
 }
 .social-item-header{
     @apply flex items-center rounded-sm p-2 bg-nk-blue;
@@ -142,7 +142,7 @@
         @apply relative;
     }
     .social-media-name{
-        @apply flex font-bold text-white;
+        @apply flex font-bold text-white h-24 items-center;
     }
     header{
         .menu-social-media:hover{
@@ -151,9 +151,9 @@
         }
     }
     .social-items{
-        @apply hidden absolute p-4 top-9 bg-nk-blue rounded shadow-2xl m-0;
+        @apply flex-nowrap hidden absolute p-4 top-16 bg-nk-blue rounded shadow-2xl m-0;
         animation: menu-noticia 0.5s forwards 1;
-        animation-delay: 0.4;
+        animation-delay: 0.6;
     }
     .social-items::after{
         @apply absolute h-0 w-0 border-nk-blue left-3;

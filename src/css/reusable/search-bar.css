@@ -2,7 +2,7 @@
     @apply flex justify-center items-center h-8 transition duration-500 my-3;
 }
 .container-search{
-    @apply relative flex rounded-2xl p-4 justify-end items-center transition duration-700;
+    @apply relative flex rounded-2xl p-4 justify-end items-center transition duration-700 min-w-1md;
 }
 .bar-search{
     @apply w-80 rounded-2xl p-2 relative border border-nk-blue text-gray-900 transition duration-700;
@@ -21,7 +21,7 @@ h1{
 }
 @media (min-width: 1024px) {
     .container-search{
-        @apply flex justify-center items-center bg-transparent rounded-full mr-2 border-0;
+        @apply flex justify-center items-center bg-transparent rounded-full mr-2 border-0 min-w-0;
     }
     .bar-search{
         @apply text-gray-900 rounded-full w-0 p-0 bg-transparent border-0;

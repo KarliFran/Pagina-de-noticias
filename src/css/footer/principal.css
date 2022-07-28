@@ -1,7 +1,7 @@
 .footer{
     @apply bg-black text-white absolute w-full left-0;
     .social-items{
-    @apply flex justify-center gap-4 p-1;
+    @apply flex justify-center gap-4 p-1 flex-wrap;
 }
 }
 .element-footer{
