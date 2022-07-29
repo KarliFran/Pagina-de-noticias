@@ -2093,6 +2093,7 @@ h2{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0.5rem;
 }
 
 .pic-opinion{
@@ -2657,6 +2658,11 @@ h2{
     opacity: 0.8;
   }
 
+.dark-theme .cita-news{
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
 .element-404{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2918,6 +2924,10 @@ h2{
   gap: 1rem;
 }
 
+.news .container-boletin{
+    min-width: 500px;
+  }
+
 .container-new{
   width: 100%;
   padding: 0.5rem;
@@ -2976,7 +2986,7 @@ h2{
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
 @media (min-width:1200px){
@@ -3056,10 +3066,6 @@ h2{
 @media (min-width:1024px){
   .container-img-terms{
     margin: 0px;
-  }
-
-  .text-terms{
-    width: 60%;
   }
 
   .title-firts{
@@ -3815,7 +3821,10 @@ input:active{
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
@@ -3844,10 +3853,14 @@ input:active{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 24rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.5rem;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -3881,6 +3894,10 @@ input:active{
     color: rgba(61, 178, 255, var(--tw-text-opacity));
   }
 
+.aside-search .container-boletin{
+    min-width: 500px;
+  }
+
 @media (min-width:1200px){
   .conten-page-search{
     display: -webkit-box;
@@ -3896,10 +3913,6 @@ input:active{
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-
-  .article-search{
-    width: 22rem;
   }
 
   .search-picture{
@@ -3918,10 +3931,6 @@ input:active{
 
   .container-title-search{
     width: 70%;
-  }
-
-  .article-search{
-    width: 29rem;
   }
 
   .header-op{
@@ -4211,6 +4220,12 @@ input:active{
   position: absolute;
   right: 0px;
   width: 1rem;
+}
+
+@media (min-width: 1024px){
+  .container-btn-darkmode{
+    width: 0px;
+  }
 }
 
 .header-search{

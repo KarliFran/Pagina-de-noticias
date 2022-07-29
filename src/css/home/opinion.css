@@ -1,5 +1,5 @@
 .container-op-home{
-    @apply flex flex-col;
+    @apply flex flex-col p-2;
 }
 
 .pic-opinion{

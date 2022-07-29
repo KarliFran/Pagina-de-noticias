@@ -31,3 +31,8 @@
 .icon-moon{
     @apply absolute w-4 right-0;
 }
+@media (min-width: 1024px){
+    .container-btn-darkmode{
+        @apply w-0;
+    }
+}

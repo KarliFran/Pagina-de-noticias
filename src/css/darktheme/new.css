@@ -5,4 +5,7 @@
     .container-cita{
         @apply bg-gray-900 opacity-80;
     }
+    .cita-news{
+        @apply text-white;
+    }
 }
