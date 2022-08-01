@@ -1,8 +1,5 @@
 .news{
     @apply flex flex-col justify-center gap-4;
-    .container-boletin{
-        @apply min-w-lg;
-    }
 }
 .container-new{
     @apply w-full p-2;

@@ -10,6 +10,11 @@
 .icon-terms{
     @apply m-0 w-12 shadow-xl;
 }
+.text-terms{
+    h1{
+        @apply text-base;
+    }
+}
 .picture-terms{
     @apply w-full;
 }

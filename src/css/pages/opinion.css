@@ -17,7 +17,7 @@
     @apply grid grid-cols-1 gap-6 pt-4 p-2;
 }
 .container-title-op{
-    @apply relative left-8 border-b-2 border-nk-blue;
+    @apply border-b-2 border-nk-blue;
 }
 .container-btn{
     @apply flex justify-end pr-4;
@@ -39,6 +39,6 @@
         @apply flex flex-col justify-center w-4/5 p-2;
     }
     .container-title-op{
-        @apply w-11/12;
+        @apply ml-8;
     }
 }
