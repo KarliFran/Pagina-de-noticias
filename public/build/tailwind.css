@@ -2681,6 +2681,7 @@ h2{
 
 .picture-404{
   margin: 0.5rem;
+  width: 100%;
   max-width: 32rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;

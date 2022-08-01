@@ -2,7 +2,7 @@
     @apply flex flex-col items-center justify-center;
 }
 .picture-404{
-    @apply m-2 p-3 rounded shadow-lg bg-blue-100 opacity-75 max-w-lg;
+    @apply m-2 p-3 w-full rounded shadow-lg bg-blue-100 opacity-75 max-w-lg;
 }
 .container-search-404{
     @apply flex relative w-full max-w-lg;
