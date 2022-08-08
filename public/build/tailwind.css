@@ -1674,16 +1674,13 @@ h2{
 }
 
 .container-more-news{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
 }
 
@@ -1693,6 +1690,7 @@ h2{
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 64rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1964,6 +1962,9 @@ h2{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.5rem;
   padding: 1rem;
 }
@@ -2378,9 +2379,12 @@ h2{
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
 
+@media (min-width: 1900px){
   .recent-post{
-    width: 18rem;
+    width: 20rem;
+    max-width: none;
   }
 }
 
@@ -3223,7 +3227,7 @@ h2{
 }
 
 .form-input{
-  width: 24rem;
+  width: 100%;
   border-radius: 0.75rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -3381,9 +3385,14 @@ input:active{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
   --tw-text-opacity: 1;
   color: rgba(55, 65, 81, var(--tw-text-opacity));
@@ -3393,12 +3402,13 @@ input:active{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20rem;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+  padding: 0.25rem;
 }
 
 .form-input{
@@ -3414,6 +3424,10 @@ input:active{
   .picture-contact{
     margin-left: -6rem;
     width: 13rem;
+  }
+
+  .form-input{
+    width: 24rem;
   }
 
   .form-info{

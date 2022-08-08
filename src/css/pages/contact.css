@@ -42,7 +42,7 @@
     @apply flex flex-col;
 }
 .form-input{
-@apply w-96 p-3 text-base border border-gray-400 rounded-xl outline-none ;
+@apply w-full p-3 text-base border border-gray-400 rounded-xl outline-none ;
 }
 .form-input:hover{
     @apply border-nk-blue transition duration-500 ease-in-out;
@@ -81,10 +81,10 @@ input:active{
 @apply flex m-0 p-2 border rounded-full border-gray-700 shadow-lg;
 }
 .item-info{
-    @apply flex items-center gap-4 text-gray-700;
+    @apply flex items-center flex-wrap justify-center gap-4 text-gray-700;
 }
 .form-contacto{
-    @apply flex flex-col gap-4 w-80 ;
+    @apply flex flex-col gap-4 w-full p-1;
 }
 .form-input{
     @apply w-full ;
@@ -95,6 +95,9 @@ input:active{
 @media (min-width:1024px){
     .picture-contact{
         @apply -ml-24 w-52;
+    }
+    .form-input{
+        @apply w-96;
     }
     .form-info{
         @apply flex flex-row p-2 pt-8;

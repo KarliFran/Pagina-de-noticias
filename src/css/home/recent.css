@@ -17,7 +17,7 @@
     scrollbar-width:none;
 }
 .recent-post{
-    @apply relative flex flex-col w-full min-w-300 max-w-md  transition duration-500 ease-in-out transform;
+    @apply relative flex flex-col w-full min-w-300 max-w-md transition duration-500 ease-in-out transform;
 }
 .recent-img{
     @apply h-56 mx-0 my-0;
@@ -42,7 +42,10 @@
     .post-late{
         @apply flex flex-col;
     }
+}
+
+@media (min-width: 1900px){
     .recent-post{
-        @apply w-72;
+        @apply w-80 max-w-none;
     }
 }
