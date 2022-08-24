@@ -1973,6 +1973,7 @@ h2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   gap: 0.25rem;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -2063,7 +2064,6 @@ h2{
 @media (min-width: 1024px){
   .container-latam{
     display: grid;
-    width: 100%;
     max-width: 1536px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;

@@ -2,7 +2,7 @@
     @apply flex flex-col items-center p-4 gap-2;
 }
 .container-latam{
-    @apply flex overflow-x-scroll overflow-y-hidden gap-1 py-4;
+    @apply flex overflow-x-scroll w-full overflow-y-hidden gap-1 py-4;
     scrollbar-width:none;
 }
 .latam-item{
@@ -26,7 +26,7 @@
 
 @media (min-width: 1024px){
     .container-latam{
-        @apply grid grid-cols-auto-fit gap-4 p-4 w-full max-w-screen-2xl overflow-x-hidden;
+        @apply grid grid-cols-auto-fit gap-4 p-4 max-w-screen-2xl overflow-x-hidden;
     }
     .latam-item:first-child{
         @apply row-row-edit h-full;
