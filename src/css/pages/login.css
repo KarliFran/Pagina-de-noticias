@@ -2,7 +2,7 @@
     @apply flex flex-col justify-center items-center pb-8;
 }
 .container-fom-login{
-    @apply flex flex-col gap-8 w-full rounded-3xl  px-6 py-4 bg-gray-50 shadow-md max-w-xs min-w-lg;
+    @apply flex flex-col gap-8 w-full rounded-3xl  px-6 py-4 bg-gray-50 shadow-md max-w-xs;
 }
 .name-login{
     @apply flex w-full justify-center text-base text-gray-700 text-center font-bold ;
@@ -86,6 +86,6 @@
 }
 @media (min-width:1200px){
     .container-fom-login{
-        @apply w-2/6;
+        @apply min-w-lg w-2/6;
     }
 }
