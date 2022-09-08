@@ -51,6 +51,9 @@
 }
 
 /*Login*/
+.container-nav-login{
+ @apply flex justify-center;
+}
 .nav-login{
     @apply px-2 border-l-2 border-r-2 border-gray-500;
 }
@@ -58,7 +61,7 @@
     @apply bg-transparent text-white text-lg cursor-pointer font-bold;
 }
 .nav-login{
-    @apply relative left-1/6 w-1/3 rounded-2xl flex items-center gap-2 bg-gray-900 p-1 justify-center;
+    @apply relative w-1/3 rounded-2xl flex items-center gap-2 bg-gray-900 p-1 justify-center;
 }
 /* Social Media*/
 .social-items{
@@ -92,7 +95,7 @@
         @apply bg-transparent pt-2 h-32;
     }
     .nav-login{
-        @apply rounded-none left-0;
+        @apply rounded-none w-full;
     }
     .social-item-header{
         @apply p-0 bg-transparent;

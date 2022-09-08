@@ -515,6 +515,15 @@ Add the correct display in Chrome and Safari.
 
 /*Login*/
 
+.container-nav-login{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .nav-login{
   border-right-width: 2px;
   border-left-width: 2px;
@@ -536,7 +545,6 @@ Add the correct display in Chrome and Safari.
 
 .nav-login{
   position: relative;
-  left: 31%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +644,7 @@ Add the correct display in Chrome and Safari.
   }
 
   .nav-login{
-    left: 0px;
+    width: 100%;
     border-radius: 0px;
   }
 
